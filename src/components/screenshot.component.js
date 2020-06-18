@@ -66,7 +66,7 @@ export default class Screenshot extends Component {
                 <img src={require("../static/img/gallery/App3.png")} alt="" />
               </div>
               <div class="single-cases-img">
-                <img src={require("../static/img/gallery/App2.png")} alt="" />
+                <img src={require("../static/img/gallery/App4.png")} alt="" />
               </div>
               <div class="single-cases-img">
                 <img src={require("../static/img/gallery/App1.png")} alt="" />
