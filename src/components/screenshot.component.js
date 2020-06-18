@@ -43,10 +43,8 @@ export default class Screenshot extends Component {
                   <br /> Screenshot
                 </h3>
                 <p>
-                  Lorem ipsum dolor sit amet, consecadipiscing elit, sed do
-                  eiusmod tempor incididunt ut ore et dolore magna aliqua. Quis
-                  ipsum suspendisse gravida. Risus commodo viverra maecenasan
-                  lacus vel facilisis.{" "}
+                  Finally, an app to make your life more positive, hopeful,
+                  grateful and joyous. The kickass design is just a bonus.{" "}
                 </p>
               </div>
             </div>

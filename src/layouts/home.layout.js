@@ -24,8 +24,10 @@ export default class Home extends Component {
                         with Dopamine
                       </h1>
                       <p data-animation="fadeInUp" data-delay=".8s">
-                        We have some positivity initiatives that might interest
-                        you.
+                        Your thoughts feed your soul, so thinking good and
+                        pleasant is of utmost importance. With this in our mind,
+                        we curated some joyous and optimistic magazines. And
+                        soon we’ll release an app as well.
                       </p>
                       {/* <!-- Slider btn --> */}
                       <div class="slider-btns">
@@ -158,10 +160,11 @@ export default class Home extends Component {
                         </span>
                       </div>
                       <div class="features-caption">
-                        <h3>Creative Design</h3>
+                        <h3>Express</h3>
                         <p>
-                          Aorem psum olorsit amet ectetur adipiscing elit, sed
-                          dov.
+                          Inspire and be inspired. Take a moment and express
+                          what's in your heart, your thoughts might spark
+                          positivity in a whole community!
                         </p>
                       </div>
                     </div>
@@ -291,23 +294,11 @@ export default class Home extends Component {
                   <div class="section-tittle section-tittle3">
                     <h2>Our WebApp Available For Any Device Coming Soon</h2>
                     <p>
-                      Duis aute irure dolor in reprehenderit in voluptate velit
-                      esse cillum dolore fug.
+                      No matter what kind of tech device you use, you will be
+                      able to access our responsive user-friendly web app
+                      anytime, anywhere from any device to add positivity to
+                      your day.
                     </p>
-                    <div class="app-btn">
-                      <a href="#" class="app-btn1">
-                        <img
-                          src={require("../static/img/shape/app_btn1.png")}
-                          alt=""
-                        />
-                      </a>
-                      <a href="#" class="app-btn2">
-                        <img
-                          src={require("../static/img/shape/app_btn2.png")}
-                          alt=""
-                        />
-                      </a>
-                    </div>
                   </div>
                 </div>
               </div>
