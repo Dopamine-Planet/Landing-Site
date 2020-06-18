@@ -176,8 +176,9 @@ export default class About extends Component {
                     <p>
                       The boss lady dons multiple hats- writer, editor,
                       designer. She’s a professional multi-tasker and the best
-                      and the coolest boss anyone can have. She makes sure that the magic of dopamine comes
-                      alive with each and everything.
+                      and the coolest boss anyone can have. She makes sure that
+                      the magic of dopamine comes alive with each and
+                      everything.
                     </p>
                   </div>
                 </div>
@@ -200,7 +201,6 @@ export default class About extends Component {
                       </a>
                     </h4>
                     <h5>Co-founder</h5>
-
                     <p>
                       The cool one, who mostly handles all the technical aspects
                       ( which we don't understand) nicely and makes sure that
@@ -262,8 +262,7 @@ export default class About extends Component {
                       This creative head brings his A-game to our curations. The
                       amazing designs enhancing each and every content of
                       magazine, the posters making our social media look nicer,
-                      all the designs are his talent and
-                      expertise.
+                      all the designs are his talent and expertise.
                     </p>
                   </div>
                 </div>
