@@ -7,12 +7,12 @@ export default class Footer extends Component {
         <img
           class="welcome-first-shape"
           src={require("../static/img/shape/welcome-bg-1.png")}
-          alt=""
+          alt="Dopamine Positivity Website Shape Element"
         />
         <img
           class="welcome-second-shape"
           src={require("../static/img/shape/welcome-bg-2.png")}
-          alt=""
+          alt="Dopamine Positivity Website Shape Element"
         />
       </div>
     );

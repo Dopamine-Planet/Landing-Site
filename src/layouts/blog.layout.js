@@ -67,7 +67,7 @@ export default class Blog extends Component {
                           <img
                             class="card-img rounded-0"
                             src={require(`../static/img/${article.featuredImage}`)}
-                            alt=""
+                            alt={article.title}
                           />
                           <a
                             href={`/blog?category=${article.category}`}

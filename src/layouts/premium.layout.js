@@ -16,18 +16,6 @@ export default class Premium extends Component {
         <section class="best-features-area section-padd4">
           <Breadcrumb />
           <div class="container">
-            <div class="welcome-bg-shape">
-              <img
-                class="welcome-first-shape"
-                src={require("../static/img/shape/welcome-bg-1.png")}
-                alt=""
-              />
-              <img
-                class="welcome-second-shape"
-                src={require("../static/img/shape/welcome-bg-2.png")}
-                alt=""
-              />
-            </div>
             <div class="row justify-content-end">
               <div class="col-xl-8 col-lg-10">
                 {/* <!-- Section Tittle --> */}
@@ -97,7 +85,7 @@ export default class Premium extends Component {
           <div class="features-shpae d-none d-lg-block">
             <img
               src={require("../static/img/shape/best-features.png")}
-              alt=""
+              alt="Dopamine Web App features"
             />
           </div>
         </section>

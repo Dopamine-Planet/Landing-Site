@@ -14,7 +14,7 @@ export default class Breadcrumb extends Component {
                     <a href="/">
                       <img
                         src={require("../static/img/logo/logo.png")}
-                        alt=""
+                        alt="Dopamine Positivity Logo"
                       />
                     </a>
                   </div>

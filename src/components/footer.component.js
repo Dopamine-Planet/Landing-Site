@@ -15,7 +15,7 @@ export default class Footer extends Component {
                       <a href="index.html">
                         <img
                           src={require("../static/img/logo/logo2_footer.png")}
-                          alt=""
+                          alt="Dopamine Positivity Logo"
                         />
                       </a>
                     </div>
@@ -71,7 +71,7 @@ export default class Footer extends Component {
                               >
                                 <img
                                   src={require("../static/img/shape/form_icon.png")}
-                                  alt=""
+                                  alt="Send Email Image"
                                 />
                               </button>
                             </div>

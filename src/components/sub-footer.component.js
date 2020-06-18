@@ -24,12 +24,12 @@ export default class SubFooter extends Component {
         <div class="say-shape">
           <img
             src={require("../static/img/shape/say-shape-left.png")}
-            alt=""
+            alt="Dopamine Positivity Website Shape Element"
             class="say-shape1 rotateme d-none d-xl-block"
           />
           <img
             src={require("../static/img/shape/say-shape-right.png")}
-            alt=""
+            alt="Dopamine Positivity Website Shape Element"
             class="say-shape2 d-none d-lg-block"
           />
         </div>

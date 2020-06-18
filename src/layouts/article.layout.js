@@ -200,7 +200,7 @@ export default class BlogDetails extends Component {
                                 <img
                                   class="img-fluid"
                                   src={require("../static/img/post/preview.png")}
-                                  alt=""
+                                  alt="Self Love: The Key to a Happy Life | Dopamine"
                                 />
                               </a>
                             </div>
@@ -233,7 +233,7 @@ export default class BlogDetails extends Component {
                                 <img
                                   class="img-fluid"
                                   src={require("../static/img/post/next.png")}
-                                  alt=""
+                                  alt="Soshi's: Making life delicious | Dopamine"
                                 />
                               </a>
                             </div>
@@ -264,7 +264,7 @@ export default class BlogDetails extends Component {
                               <div class="thumb">
                                 <img
                                   src={require("../static/img/comment/comment_3.png")}
-                                  alt=""
+                                  alt={comment.name}
                                 />
                               </div>
                               <div class="desc">

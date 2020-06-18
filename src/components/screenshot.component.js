@@ -57,19 +57,34 @@ export default class Screenshot extends Component {
               className="owl-theme col-xl-8 col-lg-8 col-md-col-md-7"
             >
               <div class="single-cases-img">
-                <img src={require("../static/img/gallery/App1.png")} alt="" />
+                <img
+                  src={require("../static/img/gallery/App1.png")}
+                  alt="Dopamine Positivity WebApp Features"
+                />
               </div>
               <div class="single-cases-img">
-                <img src={require("../static/img/gallery/App2.png")} alt="" />
+                <img
+                  src={require("../static/img/gallery/App2.png")}
+                  alt="Dopamine Positivity WebApp Features"
+                />
               </div>
               <div class="single-cases-img">
-                <img src={require("../static/img/gallery/App3.png")} alt="" />
+                <img
+                  src={require("../static/img/gallery/App3.png")}
+                  alt="Dopamine Positivity WebApp Features"
+                />
               </div>
               <div class="single-cases-img">
-                <img src={require("../static/img/gallery/App4.png")} alt="" />
+                <img
+                  src={require("../static/img/gallery/App4.png")}
+                  alt="Dopamine Positivity WebApp Features"
+                />
               </div>
               <div class="single-cases-img">
-                <img src={require("../static/img/gallery/App1.png")} alt="" />
+                <img
+                  src={require("../static/img/gallery/App1.png")}
+                  alt="Dopamine Positivity WebApp Features"
+                />
               </div>
             </OwlCarousel>
             {/* react-Owl-end */}
@@ -77,19 +92,34 @@ export default class Screenshot extends Component {
             <div class="col-xl-8 col-lg-8 col-md-col-md-7">
               <div class="app-active owl-carousel">
                 <div class="single-cases-img">
-                  <img src={require("../static/img/gallery/App1.png")} alt="" />
+                  <img
+                    src={require("../static/img/gallery/App1.png")}
+                    alt="Dopamine Positivity WebApp Features"
+                  />
                 </div>
                 <div class="single-cases-img">
-                  <img src={require("../static/img/gallery/App2.png")} alt="" />
+                  <img
+                    src={require("../static/img/gallery/App2.png")}
+                    alt="Dopamine Positivity WebApp Features"
+                  />
                 </div>
                 <div class="single-cases-img">
-                  <img src={require("../static/img/gallery/App3.png")} alt="" />
+                  <img
+                    src={require("../static/img/gallery/App3.png")}
+                    alt="Dopamine Positivity WebApp Features"
+                  />
                 </div>
                 <div class="single-cases-img">
-                  <img src={require("../static/img/gallery/App4.png")} alt="" />
+                  <img
+                    src={require("../static/img/gallery/App4.png")}
+                    alt="Dopamine Positivity WebApp Features"
+                  />
                 </div>
                 <div class="single-cases-img">
-                  <img src={require("../static/img/gallery/App1.png")} alt="" />
+                  <img
+                    src={require("../static/img/gallery/App1.png")}
+                    alt="Dopamine Positivity WebApp Features"
+                  />
                 </div>
               </div>
             </div>{" "}

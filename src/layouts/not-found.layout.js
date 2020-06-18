@@ -37,7 +37,7 @@ export default class NotFound extends Component {
                 <div class="app-img">
                   <img
                     src={require("../static/img/shape/available-app.png")}
-                    alt=""
+                    alt="Dopamine Web App on Devices of all sizes"
                   />
                 </div>
               </div>

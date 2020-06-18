@@ -70,7 +70,7 @@ export default class Issue extends Component {
                           <img
                             class="img-fluid"
                             src={require(`../static/img/${this.state.magazine.display.teaser}`)}
-                            alt=""
+                            alt={this.state.magazine.title}
                           />
                         </a>
                       )}
@@ -140,7 +140,7 @@ export default class Issue extends Component {
                           <img
                             class="img-fluid"
                             src={require("../static/img/contributors/writer.png")}
-                            alt=""
+                            alt={this.state.magazine.title + "Writers"}
                           />
                         </span>
                       </div>
@@ -170,7 +170,7 @@ export default class Issue extends Component {
                           <img
                             class="img-fluid"
                             src={require("../static/img/contributors/designers.png")}
-                            alt=""
+                            alt={this.state.magazine.title + "Designers"}
                           />
                         </span>
                       </div>
@@ -200,7 +200,7 @@ export default class Issue extends Component {
                           <img
                             class="img-fluid"
                             src={require("../static/img/contributors/photo.png")}
-                            alt=""
+                            alt={this.state.magazine.title + "Photography"}
                           />
                         </span>
                       </div>
@@ -230,7 +230,7 @@ export default class Issue extends Component {
                           <img
                             class="img-fluid"
                             src={require("../static/img/contributors/art.png")}
-                            alt=""
+                            alt={this.state.magazine.title + "Artists"}
                           />
                         </span>
                       </div>
@@ -260,7 +260,7 @@ export default class Issue extends Component {
                           <img
                             class="img-fluid"
                             src={require("../static/img/contributors/review.png")}
-                            alt=""
+                            alt={this.state.magazine.title + "Reviewers"}
                           />
                         </span>
                       </div>
@@ -290,7 +290,7 @@ export default class Issue extends Component {
                           <img
                             class="img-fluid"
                             src={require("../static/img/contributors/editors.png")}
-                            alt=""
+                            alt={this.state.magazine.title + "Editors"}
                           />
                         </span>
                       </div>

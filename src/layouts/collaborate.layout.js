@@ -45,7 +45,7 @@ export default class Collaborate extends Component {
                       <img
                         class="img-fluid"
                         src={require("../static/img/new/reach.png")}
-                        alt=""
+                        alt="increase your reach with Dopamine"
                       />
                     </span>
                   </div>
@@ -64,7 +64,7 @@ export default class Collaborate extends Component {
                       <img
                         class="img-fluid"
                         src={require("../static/img/new/web.png")}
-                        alt=""
+                        alt="get website redirects from dopamine magazine"
                       />
                     </span>
                   </div>
@@ -86,7 +86,7 @@ export default class Collaborate extends Component {
                       <img
                         class="img-fluid"
                         src={require("../static/img/new/social.png")}
-                        alt=""
+                        alt="get likes and share with dopamine magazine"
                       />
                     </span>
                   </div>
@@ -125,7 +125,7 @@ export default class Collaborate extends Component {
                       <div class="what-img">
                         <img
                           src={require("../static/img/testmonial/Ajay-Singh-Peelwa.png")}
-                          alt=""
+                          alt="Ajay Singh Peelwa"
                         />
                       </div>
                       <div class="what-cap">
@@ -152,7 +152,7 @@ export default class Collaborate extends Component {
                       <div class="what-img">
                         <img
                           src={require("../static/img/testmonial/Payal-Lulla.png")}
-                          alt=""
+                          alt="Payal Lulla"
                         />
                       </div>
                       <div class="what-cap">
