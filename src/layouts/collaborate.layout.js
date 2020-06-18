@@ -105,6 +105,60 @@ export default class Collaborate extends Component {
         </section>
         {/* <!-- Services Area End --> */}
 
+        {/* <!-- Best Features Start --> */}
+        <section class="best-features-area pb-100 pt-100 ">
+          <div class="container">
+            {/* <!-- Section Tittle --> */}
+            {/* <!-- Section caption --> */}
+            <div class="row">
+              <div class="col-lg-3 col-md-6">
+                <div class="single-features mb-70">
+                  <div class="features-icon">
+                    <span class="fa fa-bookmark"></span>
+                  </div>
+                  <div class="features-caption">
+                    <h3>10,396+</h3>
+                    <p>Magazine Readers</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6">
+                <div class="single-features mb-70">
+                  <div class="features-icon">
+                    <span class="fa fa-users"></span>
+                  </div>
+                  <div class="features-caption">
+                    <h3>2,024+</h3>
+                    <p>Instagram Followers</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6">
+                <div class="single-features mb-70">
+                  <div class="features-icon">
+                    <span class="fa fa-heart"></span>
+                  </div>
+                  <div class="features-caption">
+                    <h3>12,000+</h3>
+                    <p>Post Likes</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6">
+                <div class="single-features mb-70">
+                  <div class="features-icon">
+                    <span class="fa fa-gift"></span>
+                  </div>
+                  <div class="features-caption">
+                    <h3>5,000+</h3>
+                    <p>Weekly Impressions</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        {/* <!-- Best Features End --> */}
         {/* <!-- Our Customer Start --> */}
         <div class="our-customer pt-50 pb-100">
           <div class="container-fluid">
