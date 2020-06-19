@@ -45,6 +45,8 @@ export default class Home extends Component {
                           data-animation="fadeInRight"
                           data-delay="1.0s"
                           class="popup-video video-btn ani-btn"
+                          target="_blank"
+                          rel="noreferrer noopener"
                           href="https://www.instagram.com/p/BwOxXaAD0KC/"
                         >
                           <i class="fas fa-play"></i>

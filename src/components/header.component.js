@@ -65,6 +65,12 @@ export default class Breadcrumb extends Component {
                           <button
                             class="genric-btn success circle mb-3"
                             id="contribute"
+                            onClick={() =>
+                              window.open(
+                                "https://docs.google.com/forms/d/e/1FAIpQLScaVzYFnT8nVicqn8HZCr0Iw0y6SrMQHrMz4xx4o1loNFGVew/viewform",
+                                "_blank"
+                              )
+                            }
                           >
                             Contribute
                           </button>
