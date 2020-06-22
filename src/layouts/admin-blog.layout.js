@@ -103,8 +103,8 @@ export default class AdminBlog extends Component {
             <div class="row d-flex justify-content-center">
               <div class="col-lg-8">
                 <div class="section-tittle text-center mb-80">
-                  <p>Enter all the details and submit.</p>
-                  <h2>Create a New Blog</h2>
+                  <p>Enter all the details and Save.</p>
+                  <h2>Work on your Blog</h2>
                 </div>
               </div>
             </div>
@@ -127,6 +127,7 @@ export default class AdminBlog extends Component {
                         type="text"
                         name="title"
                         value={this.state.blog.title}
+                        onChange={this.handleChange}
                         placeholder="Title"
                         required
                         class="single-input"
@@ -299,7 +300,7 @@ export default class AdminBlog extends Component {
                         className="single-input"
                       />
                     </div>
-                    <div class="button-group-area mt-40">
+                    <div class="button-group-area">
                       <button
                         type="button"
                         className="genric-btn success circle"
@@ -333,6 +334,36 @@ export default class AdminBlog extends Component {
                 </div>
               </div>
               <div class="col-lg-6">
+                <article class="blog_item">
+                  <div class="blog_item_img">
+                    {this.state.blog.featuredImage ? (
+                      <img
+                        class="card-img rounded-0"
+                        src={require(`../static/img/${this.state.blog.featuredImage}`)}
+                        alt={this.state.blog.title}
+                      />
+                    ) : (
+                      <Skeleton height={300} />
+                    )}
+                    <a
+                      href={`/blog?category=${this.state.blog.category}`}
+                      class="blog_item_date"
+                    >
+                      <h3>{this.state.blog.category || <Skeleton />}</h3>
+                      <p></p>
+                    </a>
+                  </div>
+
+                  <div class="blog_details">
+                    <a
+                      class="d-inline-block"
+                      href={`/blog/${this.state.blog.slug}`}
+                    >
+                      <h2>{this.state.blog.title || <Skeleton />}</h2>
+                    </a>
+                    <p>{this.state.blog.excerpt || <Skeleton count={2} />}</p>
+                  </div>
+                </article>
                 <section class="blog_area single-post-area">
                   <div class="container">
                     <div class="posts-list">

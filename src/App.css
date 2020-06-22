@@ -79,3 +79,9 @@
 .best-features-area .single-features .features-icon span {
   background-image: -webkit-linear-gradient(90deg, #e78ae9 0%, #926ef8 100%);
 }
+
+/* Admin Blog */
+.single-textarea {
+  line-height: inherit;
+  resize: vertical;
+}

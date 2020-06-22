@@ -31,6 +31,7 @@ function App() {
         <Route path="/blog" component={Blog} />
         <Route path="/magazines/:slug" component={Issue} />
         <Route path="/legal/:slug" component={Legal} />
+        <Route path="/admin/blog/:slug" component={AdminBlog} />
         <Route path="/admin/blog" component={AdminBlog} />
         <Route path="/not-found" component={NotFound} />
         <Route component={NotFound} />
