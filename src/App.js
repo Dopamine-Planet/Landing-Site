@@ -14,6 +14,7 @@ import Blog from "./layouts/blog.layout";
 import Legal from "./layouts/legal.layout";
 import BlogDetails from "./layouts/article.layout";
 import Issue from "./layouts/issue.layout";
+import AdminBlog from "./layouts/admin-blog.layout";
 import NotFound from "./layouts/not-found.layout";
 
 function App() {
@@ -30,6 +31,7 @@ function App() {
         <Route path="/blog" component={Blog} />
         <Route path="/magazines/:slug" component={Issue} />
         <Route path="/legal/:slug" component={Legal} />
+        <Route path="/admin/blog" component={AdminBlog} />
         <Route path="/not-found" component={NotFound} />
         <Route component={NotFound} />
       </Switch>

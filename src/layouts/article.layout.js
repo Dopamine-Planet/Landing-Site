@@ -148,7 +148,12 @@ export default class BlogDetails extends Component {
                       <span class="align-middle">
                         <i class="fa fa-bookmark"></i>
                       </span>{" "}
-                      {this.state.blog.category || <Skeleton />}
+                      <a
+                        href={`/blog?category=${this.state.blog.category}`}
+                        class="text-dark"
+                      >
+                        {this.state.blog.category || <Skeleton />}
+                      </a>
                     </p>
                     <div class="col-sm-4 text-center my-2 my-sm-0">
                       {/* <!-- <p class="comment-count"><span class="align-middle"><i class="fa fa-comment"></i></span> 06 Comments</p> --> */}
@@ -273,43 +278,50 @@ export default class BlogDetails extends Component {
                   </div>
                 </div>
                 <div class="comments-area">
-                  <h4>{this.state.blog.comments.length} Comments</h4>
-                  {this.state.blog.comments.map((comment, i) => (
-                    <div class="comment-list">
-                      <div class="single-comment justify-content-between d-flex">
-                        <div class="user justify-content-between d-flex">
-                          <div class="thumb">
-                            {comment.name ? (
-                              <img
-                                src={require("../static/img/comment/comment_3.png")}
-                                alt={comment.name}
-                              />
-                            ) : (
-                              <Skeleton />
-                            )}
-                          </div>
-                          <div class="desc">
-                            <p class="comment">
-                              {comment.text || <Skeleton count={2} />}
-                            </p>
-                            <div class="d-flex justify-content-between">
-                              <div class="d-flex align-items-center">
-                                <h5>
-                                  <a href="#">{comment.name || <Skeleton />}</a>
-                                </h5>
-                                <p class="date">
-                                  {comment.date || <Skeleton />}
-                                </p>
-                              </div>
-                              <div class="reply-btn">
-                                <a class="btn-reply text-uppercase">reply</a>
+                  <h4>
+                    {this.state.blog.comments &&
+                      this.state.blog.comments.length}{" "}
+                    Comments
+                  </h4>
+                  {this.state.blog.comments &&
+                    this.state.blog.comments.map((comment, i) => (
+                      <div class="comment-list">
+                        <div class="single-comment justify-content-between d-flex">
+                          <div class="user justify-content-between d-flex">
+                            <div class="thumb">
+                              {comment.name ? (
+                                <img
+                                  src={require("../static/img/comment/comment_3.png")}
+                                  alt={comment.name}
+                                />
+                              ) : (
+                                <Skeleton />
+                              )}
+                            </div>
+                            <div class="desc">
+                              <p class="comment">
+                                {comment.text || <Skeleton count={2} />}
+                              </p>
+                              <div class="d-flex justify-content-between">
+                                <div class="d-flex align-items-center">
+                                  <h5>
+                                    <a href="#">
+                                      {comment.name || <Skeleton />}
+                                    </a>
+                                  </h5>
+                                  <p class="date">
+                                    {comment.date || <Skeleton />}
+                                  </p>
+                                </div>
+                                <div class="reply-btn">
+                                  <a class="btn-reply text-uppercase">reply</a>
+                                </div>
                               </div>
                             </div>
                           </div>
                         </div>
                       </div>
-                    </div>
-                  ))}
+                    ))}
                 </div>
                 <div class="comment-form">
                   <h4>Leave a Reply</h4>
