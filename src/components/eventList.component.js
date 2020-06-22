@@ -1,8 +1,9 @@
 import React, { Component } from "react";
 import firebase from "../config/database";
+import Skeleton from "react-loading-skeleton";
 
 export default class EventList extends Component {
-  state = { events: undefined };
+  state = { events: ["", "", ""] };
 
   componentDidMount() {
     var firestore = firebase.firestore();
@@ -22,34 +23,33 @@ export default class EventList extends Component {
       <div class="pricing-card-area">
         <div class="container">
           <div class="row">
-            {this.state.events &&
-              this.state.events.map((event, i) => (
-                <div class="col-xl-4 col-lg-4 col-md-6" key={i}>
-                  <div class="single-card text-center mb-30">
-                    <div class="card-top">
-                      <span>{event.date}</span>
-                      <h4>
-                        {event.title}
-                        <span>{event.subtitle}</span>
-                      </h4>
-                    </div>
-                    <div class="card-bottom">
-                      <ul>
-                        <li>{event.organizer}</li>
-                        <li>{event.address}</li>
-                      </ul>
-                      <a
-                        href={event.register}
-                        class="btn card-btn1"
-                        target="_blank"
-                        rel="noreferrer noopener"
-                      >
-                        View Details
-                      </a>
-                    </div>
+            {this.state.events.map((event, i) => (
+              <div class="col-xl-4 col-lg-4 col-md-6" key={i}>
+                <div class="single-card text-center mb-30">
+                  <div class="card-top">
+                    <span>{event.date || <Skeleton />}</span>
+                    <h4>
+                      {event.title}
+                      <span>{event.subtitle || <Skeleton />}</span>
+                    </h4>
+                  </div>
+                  <div class="card-bottom">
+                    <ul>
+                      <li>{event.organizer || <Skeleton />}</li>
+                      <li>{event.address || <Skeleton />}</li>
+                    </ul>
+                    <a
+                      href={event.register}
+                      class="btn card-btn1"
+                      target="_blank"
+                      rel="noreferrer noopener"
+                    >
+                      {event.register ? "View Details" : <Skeleton />}
+                    </a>
                   </div>
                 </div>
-              ))}
+              </div>
+            ))}
           </div>
         </div>
       </div>
