@@ -85,3 +85,8 @@
   line-height: inherit;
   resize: vertical;
 }
+
+/* Articles */
+.dp-responsive-img {
+  max-width: 4.5em;
+}

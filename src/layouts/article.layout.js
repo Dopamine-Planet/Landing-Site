@@ -20,7 +20,8 @@ export default class BlogDetails extends Component {
         const data = querySnapshot.docs[0].data();
         data.id = querySnapshot.docs[0].id;
         this.setState({ blog: data });
-      });
+      })
+      .catch((error) => console.log(error));
   }
 
   handleChange = (e) => {
@@ -214,8 +215,8 @@ export default class BlogDetails extends Component {
                         <div class="thumb">
                           <a href="/blog/self-love">
                             <img
-                              class="img-fluid"
-                              src={require("../static/img/post/preview.png")}
+                              class="img-fluid dp-responsive-img"
+                              src={require("../static/img/blog/single_blog_2.png")}
                               alt="Self Love: The Key to a Happy Life | Dopamine"
                             />
                           </a>
@@ -247,8 +248,8 @@ export default class BlogDetails extends Component {
                         <div class="thumb">
                           <a href="/blog/soshi">
                             <img
-                              class="img-fluid"
-                              src={require("../static/img/post/next.png")}
+                              class="img-fluid dp-responsive-img"
+                              src={require("../static/img/blog/single_blog_1.png")}
                               alt="Soshi's: Making life delicious | Dopamine"
                             />
                           </a>
