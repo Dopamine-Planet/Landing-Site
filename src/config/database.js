@@ -19,6 +19,5 @@ firebase.initializeApp(firebaseConfig);
 if (process.env.NODE_ENV === "production") {
   firebase.analytics();
 }
-firebase.firestore().settings({ timestampsInSnapshots: true });
 
 export default firebase;

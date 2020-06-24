@@ -40,10 +40,12 @@ export default class Issue extends Component {
             <div class="row d-flex justify-content-center">
               <div class="col-lg-8">
                 <div class="section-tittle text-center mb-80">
-                  <p>
-                    {this.state.magazine.subtitle || <Skeleton count={3} />}
-                  </p>
-                  <h2>{this.state.magazine.title || <Skeleton />}</h2>
+                  <h2>
+                    {this.state.magazine.title || <Skeleton />}
+                    <p>
+                      {this.state.magazine.subtitle || <Skeleton count={3} />}
+                    </p>
+                  </h2>
                 </div>
               </div>
             </div>
