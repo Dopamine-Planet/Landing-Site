@@ -104,7 +104,7 @@ export default class Issue extends Component {
                     data-animation="fadeInLeft"
                     data-delay="1.0s"
                     href="https://docs.google.com/forms/d/e/1FAIpQLScLK4Hhe9YK_nJw0wbIUEmoavJvn2SqUOwSOKQh-gRGCozcFw/viewform"
-                    class="btn radius-btn"
+                    class="btn radius-btn mb-4 mr-4"
                   >
                     GIVE FEEDBACK
                   </a>
@@ -113,7 +113,7 @@ export default class Issue extends Component {
                     data-animation="fadeInLeft"
                     data-delay="1.0s"
                     href="https://docs.google.com/forms/d/e/1FAIpQLScaVzYFnT8nVicqn8HZCr0Iw0y6SrMQHrMz4xx4o1loNFGVew/viewform"
-                    class="btn radius-btn card-btn1"
+                    class="btn radius-btn card-btn1 mb-4"
                   >
                     Get Featured
                   </a>
