@@ -205,6 +205,60 @@ export default class Collaborate extends Component {
                     <div class="single-customer mb-100">
                       <div class="what-img">
                         <img
+                          src={require("../static/img/testmonial/Ajay-Singh-Peelwa.png")}
+                          alt="Ajay Singh Peelwa"
+                        />
+                      </div>
+                      <div class="what-cap">
+                        <h4>
+                          <a href="https://www.facebook.com/Ajay-Singh-Peelwa-Artworks-1396297390643408/">
+                            Ajay Singh Peelwa
+                          </a>
+                        </h4>
+                        <p>
+                          I had a chance to get featured in Dopamine, the
+                          positivity magazine as a wildlife artist. The team
+                          really featured my wildlife artworks well! They
+                          focused on the need for wildlife and habitats
+                          conservation which is the main aim for me to create my
+                          artworks. Their work in the magazine is worth reading
+                          and I would recommend it to everyone and wish them
+                          success! Hope to see Dopamine achieve greater heights
+                          in the future! Best wishes!
+                        </p>
+                      </div>
+                    </div>
+
+                    <div class="single-customer mb-100">
+                      <div class="what-img">
+                        <img
+                          src={require("../static/img/testmonial/Ajay-Singh-Peelwa.png")}
+                          alt="Ajay Singh Peelwa"
+                        />
+                      </div>
+                      <div class="what-cap">
+                        <h4>
+                          <a href="https://www.facebook.com/Ajay-Singh-Peelwa-Artworks-1396297390643408/">
+                            Ajay Singh Peelwa
+                          </a>
+                        </h4>
+                        <p>
+                          I had a chance to get featured in Dopamine, the
+                          positivity magazine as a wildlife artist. The team
+                          really featured my wildlife artworks well! They
+                          focused on the need for wildlife and habitats
+                          conservation which is the main aim for me to create my
+                          artworks. Their work in the magazine is worth reading
+                          and I would recommend it to everyone and wish them
+                          success! Hope to see Dopamine achieve greater heights
+                          in the future! Best wishes!
+                        </p>
+                      </div>
+                    </div>
+
+                    <div class="single-customer mb-100">
+                      <div class="what-img">
+                        <img
                           src={require("../static/img/testmonial/Payal-Lulla.png")}
                           alt="Payal Lulla"
                         />
