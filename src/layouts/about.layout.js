@@ -22,11 +22,13 @@ export default class About extends Component {
             <div class="row d-flex justify-content-center">
               <div class="col-lg-6 col-md-8">
                 <div class="section-tittle text-center">
-                  <p>
-                    Curating and creating optimism in a life surrounded by chaos
-                    and negativity is all we do.
-                  </p>
-                  <h2>About Us</h2>
+                  <h2>
+                    About Us
+                    <p>
+                      Curating and creating optimism in a life surrounded by
+                      chaos and negativity is all we do.
+                    </p>
+                  </h2>
                 </div>
               </div>
             </div>
@@ -146,8 +148,10 @@ export default class About extends Component {
             <div class="row d-flex justify-content-center">
               <div class="col-lg-6">
                 <div class="section-tittle text-center">
-                  <p>Meet the people who make the magic happen!</p>
-                  <h2>Our Team</h2>
+                  <h2>
+                    Our Team
+                    <p>Meet the people who make the magic happen!</p>
+                  </h2>
                 </div>
               </div>
             </div>

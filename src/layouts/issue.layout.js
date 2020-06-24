@@ -131,12 +131,14 @@ export default class Issue extends Component {
             <div class="row d-flex justify-content-center">
               <div class="col-lg-6">
                 <div class="section-tittle text-center">
-                  <p>
-                    You might not know how many people your work can help feel
-                    better. Maybe someone will smile. Maybe you’ll make
-                    someone’s day.
-                  </p>
-                  <h2>Contributors</h2>
+                  <h2>
+                    Contributors
+                    <p>
+                      You might not know how many people your work can help feel
+                      better. Maybe someone will smile. Maybe you’ll make
+                      someone’s day.
+                    </p>
+                  </h2>
                 </div>
               </div>
             </div>

@@ -43,11 +43,13 @@ export default class Blog extends Component {
             <div class="row d-flex justify-content-center">
               <div class="col-lg-8">
                 <div class="section-tittle text-center mb-80">
-                  <p>
-                    Here, you'll find posts on mental health to help you live
-                    healthier and feel happier.
-                  </p>
-                  <h2>Our Blog Area​</h2>
+                  <h2>
+                    Our Blog Area​
+                    <p>
+                      Here, you'll find posts on mental health to help you live
+                      healthier and feel happier.
+                    </p>
+                  </h2>
                 </div>
               </div>
             </div>
@@ -65,11 +67,13 @@ export default class Blog extends Component {
                     <article class="blog_item" key={i}>
                       <div class="blog_item_img">
                         {article.featuredImage ? (
-                          <img
-                            class="card-img rounded-0"
-                            src={require(`../static/img/${article.featuredImage}`)}
-                            alt={article.title}
-                          />
+                          <a href={`/blog/${article.slug}`}>
+                            <img
+                              class="card-img rounded-0"
+                              src={require(`../static/img/${article.featuredImage}`)}
+                              alt={article.title}
+                            />
+                          </a>
                         ) : (
                           <Skeleton height={300} />
                         )}

@@ -1,9 +1,9 @@
-import React, { Component } from 'react';
-import firebase from '../config/database';
+import React, { Component } from "react";
+import firebase from "../config/database";
 
-import HorizontalGallery from 'react-dynamic-carousel';
+import HorizontalGallery from "react-dynamic-carousel";
 
-import SliderParent from './slider.component';
+import SliderParent from "./slider.component";
 
 export default class Magazine extends Component {
   // state = { magazines: undefined };
@@ -22,18 +22,20 @@ export default class Magazine extends Component {
 
   render() {
     return (
-      <div class='our-customer section-padd-top30' id='magazines'>
-        <div class='container-fluid'>
-          <div class='our-customer-wrapper'>
+      <div class="our-customer section-padd-top30" id="magazines">
+        <div class="container-fluid">
+          <div class="our-customer-wrapper">
             {/* <!-- Section Tittle --> */}
-            <div class='row d-flex justify-content-center'>
-              <div class='col-xl-8'>
-                <div class='section-tittle text-center'>
-                  <p>
-                    We are trying to spread positivity through creativity
-                    magazines. Checkout our recent issues below!
-                  </p>
-                  <h2>Our Magazines</h2>
+            <div class="row d-flex justify-content-center">
+              <div class="col-xl-8">
+                <div class="section-tittle text-center">
+                  <h2>
+                    Our Magazines
+                    <p>
+                      We are trying to spread positivity through creativity
+                      magazines. Checkout our recent issues below!
+                    </p>
+                  </h2>
                 </div>
               </div>
             </div>

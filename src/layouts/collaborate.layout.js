@@ -24,14 +24,12 @@ export default class Collaborate extends Component {
             <div class="row d-flex justify-content-center">
               <div class="col-lg-6">
                 <div class="section-tittle text-center">
-                  <p>
-                    Let’s push each other out of our comfort zones, explore,
-                    encourage and explore opportunities!
-                  </p>
                   <h2>
-                    How Can We Help You
-                    <br />
-                    with Dopamine!
+                    How Can We Help You with Dopamine!
+                    <p>
+                      Let’s push each other out of our comfort zones, explore,
+                      encourage and explore opportunities!
+                    </p>
                   </h2>
                 </div>
               </div>
@@ -167,8 +165,10 @@ export default class Collaborate extends Component {
               <div class="row d-flex justify-content-center">
                 <div class="col-xl-8">
                   <div class="section-tittle text-center">
-                    <p>Hear it from our collaborators in their own words!</p>
-                    <h2>Testimonails</h2>
+                    <h2>
+                      Testimonials
+                      <p>Hear it from our collaborators in their own words!</p>
+                    </h2>
                   </div>
                 </div>
               </div>

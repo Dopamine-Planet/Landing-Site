@@ -23,11 +23,13 @@ export default class Events extends Component {
             <div class="row d-flex justify-content-center">
               <div class="col-lg-6 col-md-8">
                 <div class="section-tittle text-center">
-                  <p>
-                    If you feel that you’d like to support our cause or we could
-                    mutually support our missions, let’s get talking.
-                  </p>
-                  <h2>Our Events</h2>
+                  <h2>
+                    Our Events
+                    <p>
+                      If you feel that you’d like to support our cause or we
+                      could mutually support our missions, let’s get talking.
+                    </p>
+                  </h2>
                 </div>
               </div>
             </div>
