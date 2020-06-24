@@ -1,9 +1,10 @@
 import React, { Component } from "react";
 import firebase from "../config/database";
 import MailchimpSubscribe from "react-mailchimp-subscribe";
+import Skeleton from "react-loading-skeleton";
 
 export default class Sidebar extends Component {
-  state = { blog: undefined, email: undefined };
+  state = { blog: ["", "", "", ""], email: undefined };
 
   componentDidMount() {
     var firestore = firebase.firestore();
@@ -75,15 +76,19 @@ export default class Sidebar extends Component {
             <h3 class="widget_title">Recent Posts</h3>
             {this.state.blog.map((article, i) => (
               <div class="media post_item" key={i}>
-                <img
-                  src={require(`../static/img/${article.featuredImage}`)}
-                  alt="post"
-                />
+                {article.featuredImage ? (
+                  <img
+                    src={require(`../static/img/${article.featuredImage}`)}
+                    alt="post"
+                  />
+                ) : (
+                  <Skeleton height={50} width={70} />
+                )}
                 <div class="media-body">
                   <a href={`/blog/${article.slug}`}>
-                    <h3>{article.title}</h3>
+                    <h3>{article.title || <Skeleton />}</h3>
                   </a>
-                  <p>{article.date}</p>
+                  <p>{article.date || <Skeleton />}</p>
                 </div>
               </div>
             ))}

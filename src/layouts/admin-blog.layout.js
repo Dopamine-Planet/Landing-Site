@@ -1,8 +1,9 @@
 import React, { Component } from "react";
 import Breadcrumb from "../components/breadcrumb.component";
 import firebase from "../config/database";
-import Markdown from "markdown-to-jsx";
-import Skeleton from "react-loading-skeleton";
+import ArticleCard from "../components/article-card.component";
+import BlogArticle from "../components/blog-article.component";
+import Author from "../components/author.component";
 
 export default class AdminBlog extends Component {
   state = {
@@ -103,8 +104,10 @@ export default class AdminBlog extends Component {
             <div class="row d-flex justify-content-center">
               <div class="col-lg-8">
                 <div class="section-tittle text-center mb-80">
-                  <p>Enter all the details and Save.</p>
-                  <h2>Work on your Blog</h2>
+                  <h2>
+                    Lets Work on your Blog
+                    <p>Enter all the details and save. It's that easy.</p>
+                  </h2>
                 </div>
               </div>
             </div>
@@ -309,14 +312,15 @@ export default class AdminBlog extends Component {
                         Add Tag
                       </button>
                       {this.state.blog.tags.map((tag, i) => (
-                        <a
-                          class="genric-btn success circle"
+                        <button
+                          type="button"
                           onClick={() => this.removeTag(tag)}
+                          class="genric-btn success-border circle arrow"
                           key={i}
                         >
                           {tag}
-                          <i className="ti-close"></i>
-                        </a>
+                          <span class="ti-close"></span>
+                        </button>
                       ))}
                     </div>
                     <div class="genric-btn success circle mt-3">
@@ -334,235 +338,10 @@ export default class AdminBlog extends Component {
                 </div>
               </div>
               <div class="col-lg-6">
-                <article class="blog_item">
-                  <div class="blog_item_img">
-                    {this.state.blog.featuredImage ? (
-                      <img
-                        class="card-img rounded-0"
-                        src={require(`../static/img/${this.state.blog.featuredImage}`)}
-                        alt={this.state.blog.title}
-                      />
-                    ) : (
-                      <Skeleton height={300} />
-                    )}
-                    <a
-                      href={`/blog?category=${this.state.blog.category}`}
-                      class="blog_item_date"
-                    >
-                      <h3>{this.state.blog.category || <Skeleton />}</h3>
-                      <p></p>
-                    </a>
-                  </div>
-
-                  <div class="blog_details">
-                    <a
-                      class="d-inline-block"
-                      href={`/blog/${this.state.blog.slug}`}
-                    >
-                      <h2>{this.state.blog.title || <Skeleton />}</h2>
-                    </a>
-                    <p>{this.state.blog.excerpt || <Skeleton count={2} />}</p>
-                  </div>
-                </article>
                 <section class="blog_area single-post-area">
-                  <div class="container">
-                    <div class="posts-list">
-                      <div class="single-post">
-                        <div class="feature-img">
-                          {/* <!-- <img class="img-fluid" src={require("../static/img/blog/single_blog_1.png")} alt=""> --> */}
-                          {this.state.blog.embed ? (
-                            <div
-                              class="embed-container"
-                              data-page-width="453"
-                              data-page-height="640"
-                              id="ypembedcontainer"
-                            >
-                              <iframe
-                                src={this.state.blog.embed}
-                                frameborder="0"
-                                allowfullscreen="true"
-                                title="Magazine"
-                                allowtransparency="true"
-                              ></iframe>
-                            </div>
-                          ) : (
-                            <Skeleton height={300} />
-                          )}
-                        </div>
-                        <div class="blog_details">
-                          <h2>
-                            {this.state.blog.excerpt || <Skeleton count={2} />}
-                          </h2>
-                          <ul class="blog-info-link mt-3 mb-4">
-                            <li>
-                              <a href="#">
-                                <i class="fa fa-calendar"></i>{" "}
-                                {this.state.blog.date || <Skeleton />}
-                              </a>
-                            </li>
-                            <li>
-                              {this.state.blog.tags.map((tag, i) => (
-                                <a href={`/blog?tag=${tag}`} key={i}>
-                                  <i class="fa fa-tag"></i>
-                                  {tag + " " || <Skeleton />}
-                                </a>
-                              ))}
-                            </li>
-                          </ul>
-                          {this.state.blog.description ? (
-                            <Markdown
-                              options={{
-                                overrides: {
-                                  ul: {
-                                    props: { className: "unordered-list" },
-                                  },
-                                },
-                                forceBlock: true,
-                              }}
-                            >
-                              {this.state.blog.description}
-                            </Markdown>
-                          ) : (
-                            <Skeleton count={10} />
-                          )}
-                        </div>
-                      </div>
-                      <div class="navigation-top">
-                        <div class="d-sm-flex justify-content-between text-center">
-                          <p class="like-info">
-                            <span class="align-middle">
-                              <i class="fa fa-bookmark"></i>
-                            </span>{" "}
-                            {this.state.blog.category || <Skeleton />}
-                          </p>
-                          <div class="col-sm-4 text-center my-2 my-sm-0">
-                            {/* <!-- <p class="comment-count"><span class="align-middle"><i class="fa fa-comment"></i></span> 06 Comments</p> --> */}
-                          </div>
-                          {this.state.blog.title && (
-                            <ul class="social-icons">
-                              <li>
-                                <a
-                                  href={`https://api.whatsapp.com/send?phone=&text=${this.state.blog.title} - https://dopamineplanet.com/blog/${this.state.blog.slug}`}
-                                  target="_blank"
-                                  rel="noreferrer noopener"
-                                >
-                                  <i class="fab fa-whatsapp"></i>
-                                </a>
-                              </li>
-                              <li>
-                                <a
-                                  href={`https://www.facebook.com/sharer/sharer.php?u=https://dopamineplanet.com/blog/${this.state.blog.slug}`}
-                                  target="_blank"
-                                  rel="noreferrer noopener"
-                                >
-                                  <i class="fab fa-facebook-f"></i>
-                                </a>
-                              </li>
-                              <li>
-                                <a
-                                  href={`https://www.linkedin.com/shareArticle?mini=true&url=https://dopamineplanet.com/blog/${this.state.blog.slug}&title=${this.state.blog.title}&summary=${this.state.blog.excerpt}&source=https://dopamineplanet.com`}
-                                  target="_blank"
-                                  rel="noreferrer noopener"
-                                >
-                                  <i class="fab fa-linkedin"></i>
-                                </a>
-                              </li>
-                              <li>
-                                <a
-                                  href={`https://twitter.com/intent/tweet?original_referer=https%3A%2F%2Fdopamineplanet.com%2Fblog%2F${this.state.blog.slug}%2F&text=${this.state.blog.title}&tw_p=tweetbutton&url=https%3A%2F%2Fdopamineplanet.com%2Fblog%2F${this.state.blog.slug}%2F&via=dopamineplanet`}
-                                  target="_blank"
-                                  rel="noreferrer noopener"
-                                >
-                                  <i class="fab fa-twitter"></i>
-                                </a>
-                              </li>
-                              <li>
-                                <a
-                                  href={`mailto:?subject=${this.state.blog.slug} | Dopamine Planet&body=${this.state.blog.excerpt}%20https%3A//dopamineplanet.com/blog/${this.state.blog.slug}`}
-                                  target="_blank"
-                                  rel="noreferrer noopener"
-                                >
-                                  <i class="fa fa-envelope"></i>
-                                </a>
-                              </li>
-                            </ul>
-                          )}
-                        </div>
-                        <div class="navigation-area">
-                          <div class="row">
-                            <div class="col-lg-6 col-md-6 col-12 nav-left flex-row d-flex justify-content-start align-items-center">
-                              <div class="thumb">
-                                <a href="/blog/self-love">
-                                  <img
-                                    class="img-fluid"
-                                    src={require("../static/img/post/preview.png")}
-                                    alt="Self Love: The Key to a Happy Life | Dopamine"
-                                  />
-                                </a>
-                              </div>
-                              <div class="arrow">
-                                <a href="/blog/self-love">
-                                  <span class="lnr text-white ti-arrow-left"></span>
-                                </a>
-                              </div>
-                              <div class="detials">
-                                <p>Prev Post</p>
-                                <a href="/blog/self-love">
-                                  <h4>Self Love: The Key to a Happy Life​</h4>
-                                </a>
-                              </div>
-                            </div>
-                            <div class="col-lg-6 col-md-6 col-12 nav-right flex-row d-flex justify-content-end align-items-center">
-                              <div class="detials">
-                                <p>Next Post</p>
-                                <a href="/blog/soshi">
-                                  <h4>Soshi's: Making life delicious</h4>
-                                </a>
-                              </div>
-                              <div class="arrow">
-                                <a href="/blog/soshi">
-                                  <span class="lnr text-white ti-arrow-right"></span>
-                                </a>
-                              </div>
-                              <div class="thumb">
-                                <a href="/blog/soshi">
-                                  <img
-                                    class="img-fluid"
-                                    src={require("../static/img/post/next.png")}
-                                    alt="Soshi's: Making life delicious | Dopamine"
-                                  />
-                                </a>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="blog-author">
-                        <div class="media align-items-center">
-                          {this.state.blog.author.image ? (
-                            <img
-                              src={require(`../static/img/${this.state.blog.author.image}`)}
-                              alt={this.state.blog.author.name}
-                            />
-                          ) : (
-                            <Skeleton circle={true} height={70} width={70} />
-                          )}
-                          <div class="media-body">
-                            <a href={this.state.blog.author.profile || ""}>
-                              <h4>
-                                {this.state.blog.author.name || <Skeleton />}
-                              </h4>
-                            </a>
-                            <p>
-                              {this.state.blog.author.bio || (
-                                <Skeleton count={3} />
-                              )}
-                            </p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
+                  <ArticleCard article={this.state.blog} />
+                  <BlogArticle blog={this.state.blog} />
+                  <Author author={this.state.blog.author} />
                 </section>
               </div>
             </div>

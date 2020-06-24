@@ -3,9 +3,10 @@ import SubFooter from "../components/sub-footer.component";
 import { Helmet } from "react-helmet";
 import Breadcrumb from "../components/breadcrumb.component";
 import Sidebar from "../components/sidebar.component";
-import Markdown from "markdown-to-jsx";
 import firebase from "../config/database";
 import Skeleton from "react-loading-skeleton";
+import BlogArticle from "../components/blog-article.component";
+import Author from "../components/author.component";
 
 export default class BlogDetails extends Component {
   state = { blog: { tags: ["", ""], comments: ["", ""], author: {} } };
@@ -87,62 +88,7 @@ export default class BlogDetails extends Component {
           <div class="container">
             <div class="row">
               <div class="col-lg-8 posts-list">
-                <div class="single-post">
-                  <div class="feature-img">
-                    {/* <!-- <img class="img-fluid" src={require("../static/img/blog/single_blog_1.png")} alt=""> --> */}
-                    {this.state.blog.embed ? (
-                      <div
-                        class="embed-container"
-                        data-page-width="453"
-                        data-page-height="640"
-                        id="ypembedcontainer"
-                      >
-                        <iframe
-                          src={this.state.blog.embed}
-                          frameborder="0"
-                          allowfullscreen="true"
-                          title="Magazine"
-                          allowtransparency="true"
-                        ></iframe>
-                      </div>
-                    ) : (
-                      <Skeleton height={300} />
-                    )}
-                  </div>
-                  <div class="blog_details">
-                    <h2>{this.state.blog.excerpt || <Skeleton count={2} />}</h2>
-                    <ul class="blog-info-link mt-3 mb-4">
-                      <li>
-                        <a href="#">
-                          <i class="fa fa-calendar"></i>{" "}
-                          {this.state.blog.date || <Skeleton />}
-                        </a>
-                      </li>
-                      <li>
-                        {this.state.blog.tags.map((tag, i) => (
-                          <a href={`/blog?tag=${tag}`} key={i}>
-                            <i class="fa fa-tag"></i>
-                            {tag + " " || <Skeleton />}
-                          </a>
-                        ))}
-                      </li>
-                    </ul>
-                    {this.state.blog.description ? (
-                      <Markdown
-                        options={{
-                          overrides: {
-                            ul: { props: { className: "unordered-list" } },
-                          },
-                          forceBlock: true,
-                        }}
-                      >
-                        {this.state.blog.description}
-                      </Markdown>
-                    ) : (
-                      <Skeleton count={10} />
-                    )}
-                  </div>
-                </div>
+                <BlogArticle blog={this.state.blog} />
                 <div class="navigation-top">
                   <div class="d-sm-flex justify-content-between text-center">
                     <p class="like-info">
@@ -258,26 +204,7 @@ export default class BlogDetails extends Component {
                     </div>
                   </div>
                 </div>
-                <div class="blog-author">
-                  <div class="media align-items-center">
-                    {this.state.blog.author.image ? (
-                      <img
-                        src={require(`../static/img/${this.state.blog.author.image}`)}
-                        alt={this.state.blog.author.name}
-                      />
-                    ) : (
-                      <Skeleton circle={true} height={70} width={70} />
-                    )}
-                    <div class="media-body">
-                      <a href={this.state.blog.author.profile}>
-                        <h4>{this.state.blog.author.name || <Skeleton />}</h4>
-                      </a>
-                      <p>
-                        {this.state.blog.author.bio || <Skeleton count={3} />}
-                      </p>
-                    </div>
-                  </div>
-                </div>
+                <Author author={this.state.blog.author} />
                 <div class="comments-area">
                   <h4>
                     {this.state.blog.comments &&

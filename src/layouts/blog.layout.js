@@ -4,7 +4,7 @@ import { Helmet } from "react-helmet";
 import Breadcrumb from "../components/breadcrumb.component";
 import Sidebar from "../components/sidebar.component";
 import firebase from "../config/database";
-import Skeleton from "react-loading-skeleton";
+import ArticleCard from "../components/article-card.component";
 
 export default class Blog extends Component {
   state = { blog: [{ tags: ["", ""] }, { tags: ["", ""] }] };
@@ -64,52 +64,7 @@ export default class Blog extends Component {
               <div class="col-lg-8 mb-5 mb-lg-0">
                 <div class="blog_left_sidebar">
                   {this.state.blog.map((article, i) => (
-                    <article class="blog_item" key={i}>
-                      <div class="blog_item_img">
-                        {article.featuredImage ? (
-                          <a href={`/blog/${article.slug}`}>
-                            <img
-                              class="card-img rounded-0"
-                              src={require(`../static/img/${article.featuredImage}`)}
-                              alt={article.title}
-                            />
-                          </a>
-                        ) : (
-                          <Skeleton height={300} />
-                        )}
-                        <a
-                          href={`/blog?category=${article.category}`}
-                          class="blog_item_date"
-                        >
-                          <h3>{article.category || <Skeleton />}</h3>
-                          <p></p>
-                        </a>
-                      </div>
-
-                      <div class="blog_details">
-                        <a
-                          class="d-inline-block"
-                          href={`/blog/${article.slug}`}
-                        >
-                          <h2>{article.title || <Skeleton />}</h2>
-                        </a>
-                        <p>{article.excerpt || <Skeleton count={2} />}</p>
-                        <ul class="blog-info-link">
-                          <li>
-                            <i class="fa fa-calendar"></i>{" "}
-                            {article.date || <Skeleton />}
-                          </li>
-                          <li>
-                            {article.tags.map((tag, i) => (
-                              <a href={`/blog?tag=${tag}`} key={i}>
-                                <i class="fa fa-tag"></i>
-                                {tag + " " || <Skeleton count={2} />}
-                              </a>
-                            ))}
-                          </li>
-                        </ul>
-                      </div>
-                    </article>
+                    <ArticleCard article={article} key={i} />
                   ))}
                   {/* <!-- <nav class="blog-pagination justify-content-center d-flex">
                     <ul class="pagination">
