@@ -184,20 +184,21 @@ export default class Collaborate extends Component {
                       </div>
                       <div class="what-cap">
                         <h4>
-                          <a href="https://www.facebook.com/Ajay-Singh-Peelwa-Artworks-1396297390643408/">
-                            Ajay Singh Peelwa
+                          <a href="https://www.instagram.com/pinkcitypodcast/">
+                            Lakshaya Arora
                           </a>
                         </h4>
                         <p>
-                          I had a chance to get featured in Dopamine, the
-                          positivity magazine as a wildlife artist. The team
-                          really featured my wildlife artworks well! They
-                          focused on the need for wildlife and habitats
-                          conservation which is the main aim for me to create my
-                          artworks. Their work in the magazine is worth reading
-                          and I would recommend it to everyone and wish them
-                          success! Hope to see Dopamine achieve greater heights
-                          in the future! Best wishes!
+                          My experience has been amazing. What they are doing is
+                          really great. I thank Team Dopamine for considering my
+                          work worth sharing. At last, with whatever we do in
+                          life, we do need a positive mindset to do things in a
+                          healthy way. Organic growth comes from not being
+                          stressed, but optimistic and believing in yourself,
+                          and that’s exactly what Dopamine is trying to tell
+                          people. Really proud to be associated with them. The
+                          world needs kindness right now, and they’re doing
+                          their best in delivering the same.
                         </p>
                       </div>
                     </div>
@@ -211,20 +212,17 @@ export default class Collaborate extends Component {
                       </div>
                       <div class="what-cap">
                         <h4>
-                          <a href="https://www.facebook.com/Ajay-Singh-Peelwa-Artworks-1396297390643408/">
-                            Ajay Singh Peelwa
+                          <a href="https://www.instagram.com/soshiadventures/">
+                            Devanshi & Soumiya​
                           </a>
                         </h4>
                         <p>
-                          I had a chance to get featured in Dopamine, the
-                          positivity magazine as a wildlife artist. The team
-                          really featured my wildlife artworks well! They
-                          focused on the need for wildlife and habitats
-                          conservation which is the main aim for me to create my
-                          artworks. Their work in the magazine is worth reading
-                          and I would recommend it to everyone and wish them
-                          success! Hope to see Dopamine achieve greater heights
-                          in the future! Best wishes!
+                          Our experience with Dopamine has been perfect. We are
+                          really grateful to the team for reaching out to us and
+                          helping us spread the word about our food, experiences
+                          & work. They are doing some amazing things and giving
+                          a lot of artists and startups a voice and a platform
+                          to be seen.
                         </p>
                       </div>
                     </div>
