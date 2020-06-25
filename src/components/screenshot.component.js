@@ -55,25 +55,25 @@ export default class Screenshot extends Component {
               <div class="single-cases-img">
                 <img
                   src={require("../static/img/gallery/App1.png")}
-                  alt="Dopamine Positivity WebApp Features"
+                  alt="Dopamine Positivity WebApp Albums Screen Design"
                 />
               </div>
               <div class="single-cases-img">
                 <img
                   src={require("../static/img/gallery/App2.png")}
-                  alt="Dopamine Positivity WebApp Features"
+                  alt="Dopamine Positivity WebApp Home Screen Design"
                 />
               </div>
               <div class="single-cases-img">
                 <img
                   src={require("../static/img/gallery/App3.png")}
-                  alt="Dopamine Positivity WebApp Features"
+                  alt="Dopamine Positivity WebApp User Profile Screen Design"
                 />
               </div>
               <div class="single-cases-img">
                 <img
                   src={require("../static/img/gallery/App4.png")}
-                  alt="Dopamine Positivity WebApp Features"
+                  alt="Dopamine Positivity WebApp Express Screen Design "
                 />
               </div>
               <div class="single-cases-img">
