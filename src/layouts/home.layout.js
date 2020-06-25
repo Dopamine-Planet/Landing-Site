@@ -62,7 +62,7 @@ export default class Home extends Component {
                     >
                       <img
                         src={require("../static/img/hero/hero_right.png")}
-                        alt=""
+                        alt="Dopamine App Homepage Screen Design"
                       />
                     </div>
                   </div>
@@ -94,7 +94,7 @@ export default class Home extends Component {
                           <img
                             class="img-fluid"
                             src={require("../static/img/new/hand.svg")}
-                            alt=""
+                            alt="Daily tasks icon"
                           />
                         </span>
                       </div>
@@ -115,7 +115,7 @@ export default class Home extends Component {
                           <img
                             class="img-fluid"
                             src={require("../static/img/new/calm.svg")}
-                            alt=""
+                            alt="Positive and calming content icon"
                           />
                         </span>
                       </div>
@@ -137,7 +137,7 @@ export default class Home extends Component {
                           <img
                             class="img-fluid"
                             src={require("../static/img/new/love-and-romance.svg")}
-                            alt=""
+                            alt="Gratitude list icon"
                           />
                         </span>
                       </div>
@@ -157,7 +157,7 @@ export default class Home extends Component {
                           <img
                             class="img-fluid"
                             src={require("../static/img/new/love-and-romance.svg")}
-                            alt=""
+                            alt="Express icon"
                           />
                         </span>
                       </div>
@@ -179,7 +179,7 @@ export default class Home extends Component {
           <div class="features-shpae d-none d-lg-block">
             <img
               src={require("../static/img/shape/best-features.png")}
-              alt=""
+              alt="Dopamine app features screen designs"
             />
           </div>
         </section>
@@ -208,7 +208,7 @@ export default class Home extends Component {
                       <img
                         class="img-fluid"
                         src={require("../static/img/new/happierlife.png")}
-                        alt=""
+                        alt="positive life icon"
                       />
                     </span>
                   </div>
@@ -229,7 +229,7 @@ export default class Home extends Component {
                       <img
                         class="img-fluid"
                         src={require("../static/img/new/poscontent.png")}
-                        alt=""
+                        alt="Positivity content icon"
                       />
                     </span>
                   </div>
@@ -251,7 +251,7 @@ export default class Home extends Component {
                       <img
                         class="img-fluid"
                         src={require("../static/img/new/gratitude.png")}
-                        alt=""
+                        alt="Build gratitude icon"
                       />
                     </span>
                   </div>
@@ -308,7 +308,7 @@ export default class Home extends Component {
                 <div class="app-img">
                   <img
                     src={require("../static/img/shape/available-app.png")}
-                    alt=""
+                    alt="Dopamine app Screen Design for Laptop, phone and TV"
                   />
                 </div>
               </div>
