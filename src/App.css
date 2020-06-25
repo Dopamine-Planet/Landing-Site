@@ -3,7 +3,7 @@
   display: inline-block;
 }
 
-/* breadcrumb */
+/* Breadcrumb */
 .welcome-bg-shape .welcome-first-shape {
   left: 0;
   top: 0;
@@ -89,4 +89,9 @@
 /* Articles */
 .dp-responsive-img {
   max-width: 4.5em;
+}
+
+/* Notif */
+.genric-btn.success.circle:empty {
+  display: none !important;
 }
