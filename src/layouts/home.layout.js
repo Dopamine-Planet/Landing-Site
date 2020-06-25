@@ -1,9 +1,18 @@
 import React, { Component } from "react";
+import firebase from "../config/database";
 import Magazine from "../components/magazine.component";
 import Screenshot from "../components/screenshot.component";
 import EventList from "../components/eventList.component";
 
 export default class Home extends Component {
+  componentDidMount() {
+    const messaging = firebase.messaging();
+    messaging
+      .requestPermission()
+      .then(() => console.log("Request Granted"))
+      .catch((err) => console.log(err));
+  }
+
   render() {
     return (
       <main>

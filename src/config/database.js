@@ -1,5 +1,6 @@
 import firebase from "firebase/app";
 import "firebase/firestore";
+import "firebase/messaging";
 import "firebase/analytics";
 import "firebase/storage";
 
