@@ -7,10 +7,7 @@ export default class Author extends Component {
       <div class="blog-author">
         <div class="media align-items-center">
           {this.props.author.image ? (
-            <img
-              src={require(`../static/img/${this.props.author.image}`)}
-              alt={this.props.author.name}
-            />
+            <img src={this.props.author.image} alt={this.props.author.name} />
           ) : (
             <Skeleton circle={true} height={70} width={70} />
           )}

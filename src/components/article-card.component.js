@@ -10,7 +10,7 @@ export default class ArticleCard extends Component {
             <a href={`/blog/${this.props.article.slug}`}>
               <img
                 class="card-img rounded-0"
-                src={require(`../static/img/${this.props.article.featuredImage}`)}
+                src={this.props.article.featuredImage}
                 alt={this.props.article.title}
               />
             </a>

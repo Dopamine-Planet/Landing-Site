@@ -77,10 +77,7 @@ export default class Sidebar extends Component {
             {this.state.blog.map((article, i) => (
               <div class="media post_item" key={i}>
                 {article.featuredImage ? (
-                  <img
-                    src={require(`../static/img/${article.featuredImage}`)}
-                    alt="post"
-                  />
+                  <img src={article.featuredImage} alt="post" />
                 ) : (
                   <Skeleton height={50} width={70} />
                 )}

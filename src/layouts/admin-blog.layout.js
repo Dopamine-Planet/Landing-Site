@@ -1,6 +1,6 @@
 import React, { Component } from "react";
-import Breadcrumb from "../components/breadcrumb.component";
 import firebase from "../config/database";
+import Breadcrumb from "../components/breadcrumb.component";
 import ArticleCard from "../components/article-card.component";
 import BlogArticle from "../components/blog-article.component";
 import Author from "../components/author.component";
@@ -64,6 +64,83 @@ export default class AdminBlog extends Component {
         author: { ...this.state.blog.author, [e.target.name]: e.target.value },
       },
     });
+  };
+
+  handleFile = (e) => {
+    if (e.target.files[0]) {
+      const image = e.target.files[0];
+      const uploadTask = firebase
+        .storage()
+        .ref(`blog/featured-image/${image.name}`)
+        .put(image);
+      uploadTask.on(
+        "state_changed",
+        (snapshot) => {
+          // progrss function ....
+          const progress = Math.round(
+            (snapshot.bytesTransferred / snapshot.totalBytes) * 100
+          );
+          this.setState({ progress });
+        },
+        (error) => {
+          // error function ....
+          console.log(error);
+        },
+        () => {
+          // complete function ....
+          firebase
+            .storage()
+            .ref("blog/featured-image")
+            .child(image.name)
+            .getDownloadURL()
+            .then((url) => {
+              this.setState({
+                blog: { ...this.state.blog, featuredImage: url },
+              });
+            });
+        }
+      );
+    }
+  };
+
+  handleAuthorImage = (e) => {
+    if (e.target.files[0]) {
+      const image = e.target.files[0];
+      const uploadTask = firebase
+        .storage()
+        .ref(`blog/author-image/${image.name}`)
+        .put(image);
+      uploadTask.on(
+        "state_changed",
+        (snapshot) => {
+          // progrss function ....
+          const progress = Math.round(
+            (snapshot.bytesTransferred / snapshot.totalBytes) * 100
+          );
+          this.setState({ progress });
+        },
+        (error) => {
+          // error function ....
+          console.log(error);
+        },
+        () => {
+          // complete function ....
+          firebase
+            .storage()
+            .ref("blog/author-image")
+            .child(image.name)
+            .getDownloadURL()
+            .then((url) => {
+              this.setState({
+                blog: {
+                  ...this.state.blog,
+                  author: { ...this.state.blog.author, image: url },
+                },
+              });
+            });
+        }
+      );
+    }
   };
 
   saveBlog = (e) => {
@@ -155,13 +232,14 @@ export default class AdminBlog extends Component {
                         <i class="fa fa-camera-retro" aria-hidden="true"></i>
                       </div>
                       <input
-                        type="text"
+                        type="url"
                         name="featuredImage"
                         value={this.state.blog.featuredImage}
                         onChange={this.handleChange}
-                        placeholder="Featured Image"
+                        placeholder="Enter Feature Image URL or Upload File below"
                         class="single-input"
                       />
+                      <input type="file" onChange={this.handleFile} />
                     </div>
                     <div class="input-group-icon mt-10">
                       <div class="icon">
@@ -240,14 +318,15 @@ export default class AdminBlog extends Component {
                         <i class="fa fa-id-badge" aria-hidden="true"></i>
                       </div>
                       <input
-                        type="text"
+                        type="url"
                         name="image"
-                        placeholder="Author Image"
+                        placeholder="Enter Author Image URL or Upload File below"
                         value={this.state.blog.author.image}
                         onChange={this.authorChange}
                         required
                         class="single-input"
                       />
+                      <input type="file" onChange={this.handleAuthorImage} />
                     </div>
                     <div class="input-group-icon mt-10">
                       <div class="icon">
