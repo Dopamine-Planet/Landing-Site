@@ -10,6 +10,8 @@ export default class AdminBlog extends Component {
     id: null,
     notif: undefined,
     blog: { author: {}, tags: [] },
+    fileProgress: 0,
+    authorProgress: 0,
   };
 
   componentDidMount() {
@@ -77,10 +79,10 @@ export default class AdminBlog extends Component {
         "state_changed",
         (snapshot) => {
           // progrss function ....
-          const progress = Math.round(
+          const fileProgress = Math.round(
             (snapshot.bytesTransferred / snapshot.totalBytes) * 100
           );
-          this.setState({ progress });
+          this.setState({ fileProgress });
         },
         (error) => {
           // error function ....
@@ -114,10 +116,10 @@ export default class AdminBlog extends Component {
         "state_changed",
         (snapshot) => {
           // progrss function ....
-          const progress = Math.round(
+          const authorProgress = Math.round(
             (snapshot.bytesTransferred / snapshot.totalBytes) * 100
           );
-          this.setState({ progress });
+          this.setState({ authorProgress });
         },
         (error) => {
           // error function ....
@@ -240,6 +242,9 @@ export default class AdminBlog extends Component {
                         class="single-input"
                       />
                       <input type="file" onChange={this.handleFile} />
+                      {this.state.fileProgress > 0 && (
+                        <progress value={this.state.fileProgress} max="100" />
+                      )}
                     </div>
                     <div class="input-group-icon mt-10">
                       <div class="icon">
@@ -327,6 +332,9 @@ export default class AdminBlog extends Component {
                         class="single-input"
                       />
                       <input type="file" onChange={this.handleAuthorImage} />
+                      {this.state.authorProgress > 0 && (
+                        <progress value={this.state.authorProgress} max="100" />
+                      )}
                     </div>
                     <div class="input-group-icon mt-10">
                       <div class="icon">
