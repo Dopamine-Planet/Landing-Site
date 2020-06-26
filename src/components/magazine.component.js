@@ -19,7 +19,7 @@ export default class Magazine extends Component {
 
   render() {
     return (
-      <div className="our-customer section-padd-top30">
+      <div className="our-customer section-padd-top30" id="magazines">
         <div className="container-fluid">
           <div className="our-customer-wrapper">
             {/* <!-- Section Tittle --> */}
