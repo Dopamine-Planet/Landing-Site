@@ -16,13 +16,13 @@ export default class Events extends Component {
           />
         </Helmet>
         {/* <!-- Best Pricing Start --> */}
-        <section class="best-pricing best-pricing2 pricing-padding2">
+        <section className="best-pricing best-pricing2 pricing-padding2">
           <Breadcrumb />
-          <div class="container">
+          <div className="container">
             {/* <!-- Section Tittle --> */}
-            <div class="row d-flex justify-content-center">
-              <div class="col-lg-6 col-md-8">
-                <div class="section-tittle text-center">
+            <div className="row d-flex justify-content-center">
+              <div className="col-lg-6 col-md-8">
+                <div className="section-tittle text-center">
                   <h2>
                     Our Events
                     <p>

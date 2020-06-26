@@ -23,8 +23,7 @@ export default class AdminBlog extends Component {
         .get()
         .then((querySnapshot) => {
           const data = querySnapshot.docs[0].data();
-          data.id = querySnapshot.docs[0].id;
-          this.setState({ blog: data });
+          this.setState({ blog: data, id: querySnapshot.docs[0].id });
         });
     }
   }
@@ -156,7 +155,7 @@ export default class AdminBlog extends Component {
         .set(this.state.blog, { merge: true })
         .then((response) =>
           this.setState({
-            notif: `Blog created successfully with id: ${response.id}`,
+            notif: `Blog saved successfully`,
           })
         )
         .catch((error) => console.log(error));
@@ -176,13 +175,13 @@ export default class AdminBlog extends Component {
     return (
       <main>
         {/* <!-- Best Pricing Start --> */}
-        <section class="services-area">
+        <section className="services-area">
           <Breadcrumb />
-          <div class="container">
+          <div className="container">
             {/* <!-- Section-tittle --> */}
-            <div class="row d-flex justify-content-center">
-              <div class="col-lg-8">
-                <div class="section-tittle text-center mb-80">
+            <div className="row d-flex justify-content-center">
+              <div className="col-lg-8">
+                <div className="section-tittle text-center mb-80">
                   <h2>
                     Lets Work on your Blog
                     <p>Enter all the details and save. It's that easy.</p>
@@ -195,15 +194,15 @@ export default class AdminBlog extends Component {
         {/* <!-- Best Pricing End --> */}
 
         {/* <!--================Blog Area =================--> */}
-        <section class="blog_area section-paddingr">
-          <div class="container">
-            <div class="row">
-              <div class="col-lg-6 mb-5 mb-lg-0">
-                <div class="blog_left_sidebar">
+        <section className="blog_area section-paddingr">
+          <div className="container">
+            <div className="row">
+              <div className="col-lg-6 mb-5 mb-lg-0">
+                <div className="blog_left_sidebar">
                   <form onSubmit={this.saveBlog}>
-                    <div class="input-group-icon mt-10">
-                      <div class="icon">
-                        <i class="fa fa-font" aria-hidden="true"></i>
+                    <div className="input-group-icon mt-10">
+                      <div className="icon">
+                        <i className="fa fa-font" aria-hidden="true"></i>
                       </div>
                       <input
                         type="text"
@@ -212,12 +211,12 @@ export default class AdminBlog extends Component {
                         onChange={this.handleChange}
                         placeholder="Title"
                         required
-                        class="single-input"
+                        className="single-input"
                       />
                     </div>
-                    <div class="input-group-icon mt-10">
-                      <div class="icon">
-                        <i class="fa fa-link" aria-hidden="true"></i>
+                    <div className="input-group-icon mt-10">
+                      <div className="icon">
+                        <i className="fa fa-link" aria-hidden="true"></i>
                       </div>
                       <input
                         type="text"
@@ -226,12 +225,15 @@ export default class AdminBlog extends Component {
                         onChange={this.handleChange}
                         placeholder="Slug"
                         required
-                        class="single-input"
+                        className="single-input"
                       />
                     </div>
-                    <div class="input-group-icon mt-10">
-                      <div class="icon">
-                        <i class="fa fa-camera-retro" aria-hidden="true"></i>
+                    <div className="input-group-icon mt-10">
+                      <div className="icon">
+                        <i
+                          className="fa fa-camera-retro"
+                          aria-hidden="true"
+                        ></i>
                       </div>
                       <input
                         type="url"
@@ -239,16 +241,16 @@ export default class AdminBlog extends Component {
                         value={this.state.blog.featuredImage}
                         onChange={this.handleChange}
                         placeholder="Enter Feature Image URL or Upload File below"
-                        class="single-input"
+                        className="single-input"
                       />
                       <input type="file" onChange={this.handleFile} />
                       {this.state.fileProgress > 0 && (
                         <progress value={this.state.fileProgress} max="100" />
                       )}
                     </div>
-                    <div class="input-group-icon mt-10">
-                      <div class="icon">
-                        <i class="fa fa-spinner" aria-hidden="true"></i>
+                    <div className="input-group-icon mt-10">
+                      <div className="icon">
+                        <i className="fa fa-spinner" aria-hidden="true"></i>
                       </div>
                       <input
                         type="url"
@@ -256,12 +258,12 @@ export default class AdminBlog extends Component {
                         value={this.state.blog.embed}
                         onChange={this.handleChange}
                         placeholder="Embed"
-                        class="single-input"
+                        className="single-input"
                       />
                     </div>
-                    <div class="input-group-icon mt-10">
-                      <div class="icon">
-                        <i class="fa fa-paragraph" aria-hidden="true"></i>
+                    <div className="input-group-icon mt-10">
+                      <div className="icon">
+                        <i className="fa fa-paragraph" aria-hidden="true"></i>
                       </div>
                       <input
                         type="text"
@@ -270,12 +272,12 @@ export default class AdminBlog extends Component {
                         name="excerpt"
                         placeholder="Excerpt"
                         required
-                        class="single-input"
+                        className="single-input"
                       />
                     </div>
-                    <div class="input-group-icon mt-10">
-                      <div class="icon">
-                        <i class="fa fa-calendar" aria-hidden="true"></i>
+                    <div className="input-group-icon mt-10">
+                      <div className="icon">
+                        <i className="fa fa-calendar" aria-hidden="true"></i>
                       </div>
                       <input
                         type="text"
@@ -284,12 +286,12 @@ export default class AdminBlog extends Component {
                         name="date"
                         placeholder="Date"
                         required
-                        class="single-input"
+                        className="single-input"
                       />
                     </div>
-                    <div class="mt-10">
+                    <div className="mt-10">
                       <textarea
-                        class="single-textarea"
+                        className="single-textarea"
                         placeholder="Description"
                         name="description"
                         value={this.state.blog.description}
@@ -297,11 +299,11 @@ export default class AdminBlog extends Component {
                         required
                       ></textarea>
                     </div>
-                    <div class="input-group-icon mt-10">
-                      <div class="icon">
-                        <i class="fa fa-bookmark" aria-hidden="true"></i>
+                    <div className="input-group-icon mt-10">
+                      <div className="icon">
+                        <i className="fa fa-bookmark" aria-hidden="true"></i>
                       </div>
-                      <div class="form-select" id="default-select">
+                      <div className="form-select" id="default-select">
                         <select
                           value={this.state.blog.category}
                           className="nice-select"
@@ -318,9 +320,9 @@ export default class AdminBlog extends Component {
                         </select>
                       </div>
                     </div>
-                    <div class="input-group-icon mt-10">
-                      <div class="icon">
-                        <i class="fa fa-id-badge" aria-hidden="true"></i>
+                    <div className="input-group-icon mt-10">
+                      <div className="icon">
+                        <i className="fa fa-id-badge" aria-hidden="true"></i>
                       </div>
                       <input
                         type="url"
@@ -329,16 +331,16 @@ export default class AdminBlog extends Component {
                         value={this.state.blog.author.image}
                         onChange={this.authorChange}
                         required
-                        class="single-input"
+                        className="single-input"
                       />
                       <input type="file" onChange={this.handleAuthorImage} />
                       {this.state.authorProgress > 0 && (
                         <progress value={this.state.authorProgress} max="100" />
                       )}
                     </div>
-                    <div class="input-group-icon mt-10">
-                      <div class="icon">
-                        <i class="fa fa-user-circle" aria-hidden="true"></i>
+                    <div className="input-group-icon mt-10">
+                      <div className="icon">
+                        <i className="fa fa-user-circle" aria-hidden="true"></i>
                       </div>
                       <input
                         type="text"
@@ -347,12 +349,12 @@ export default class AdminBlog extends Component {
                         required
                         value={this.state.blog.author.name}
                         onChange={this.authorChange}
-                        class="single-input"
+                        className="single-input"
                       />
                     </div>
-                    <div class="input-group-icon mt-10">
-                      <div class="icon">
-                        <i class="fa fa-share-alt" aria-hidden="true"></i>
+                    <div className="input-group-icon mt-10">
+                      <div className="icon">
+                        <i className="fa fa-share-alt" aria-hidden="true"></i>
                       </div>
                       <input
                         type="url"
@@ -361,12 +363,12 @@ export default class AdminBlog extends Component {
                         value={this.state.blog.author.profile}
                         onChange={this.authorChange}
                         required
-                        class="single-input"
+                        className="single-input"
                       />
                     </div>
-                    <div class="input-group-icon mt-10">
-                      <div class="icon">
-                        <i class="fa fa-id-card" aria-hidden="true"></i>
+                    <div className="input-group-icon mt-10">
+                      <div className="icon">
+                        <i className="fa fa-id-card" aria-hidden="true"></i>
                       </div>
                       <input
                         type="text"
@@ -375,12 +377,12 @@ export default class AdminBlog extends Component {
                         onChange={this.authorChange}
                         placeholder="Author Bio"
                         required
-                        class="single-input"
+                        className="single-input"
                       />
                     </div>
-                    <div class="input-group-icon mt-10">
-                      <div class="icon">
-                        <i class="fa fa-tags" aria-hidden="true"></i>
+                    <div className="input-group-icon mt-10">
+                      <div className="icon">
+                        <i className="fa fa-tags" aria-hidden="true"></i>
                       </div>
                       <input
                         type="text"
@@ -390,7 +392,7 @@ export default class AdminBlog extends Component {
                         className="single-input"
                       />
                     </div>
-                    <div class="button-group-area">
+                    <div className="button-group-area">
                       <button
                         type="button"
                         className="genric-btn success circle"
@@ -402,15 +404,15 @@ export default class AdminBlog extends Component {
                         <button
                           type="button"
                           onClick={() => this.removeTag(tag)}
-                          class="genric-btn success-border circle arrow"
+                          className="genric-btn success-border circle arrow"
                           key={i}
                         >
                           {tag}
-                          <span class="ti-close"></span>
+                          <span className="ti-close"></span>
                         </button>
                       ))}
                     </div>
-                    <div class="genric-btn success circle mt-3">
+                    <div className="genric-btn success circle mt-3">
                       {this.state.notif}
                     </div>
                     <div className="form-group mt-3">
@@ -424,8 +426,8 @@ export default class AdminBlog extends Component {
                   </form>
                 </div>
               </div>
-              <div class="col-lg-6">
-                <section class="blog_area single-post-area">
+              <div className="col-lg-6">
+                <section className="blog_area single-post-area">
                   <ArticleCard article={this.state.blog} />
                   <BlogArticle blog={this.state.blog} />
                   <Author author={this.state.blog.author} />

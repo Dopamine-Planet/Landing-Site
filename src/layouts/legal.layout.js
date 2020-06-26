@@ -26,13 +26,13 @@ export default class Legal extends Component {
         {this.state.legal && (
           <main>
             {/* <!-- Slider Area Start--> */}
-            <div class="services-area">
+            <div className="services-area">
               <Breadcrumb />
-              <div class="container">
+              <div className="container">
                 {/* <!-- Section-tittle --> */}
-                <div class="row d-flex justify-content-center">
-                  <div class="col-lg-8">
-                    <div class="section-tittle text-center mb-80">
+                <div className="row d-flex justify-content-center">
+                  <div className="col-lg-8">
+                    <div className="section-tittle text-center mb-80">
                       <h2>{this.state.legal.title}</h2>
                     </div>
                   </div>
@@ -41,12 +41,12 @@ export default class Legal extends Component {
             </div>
             {/* <!-- Slider Area End--> */}
             {/* <!--================Blog Area =================--> */}
-            <section class="blog_area single-post-area">
-              <div class="container">
-                <div class="row">
-                  <div class="col-lg-8 posts-list">
-                    <div class="single-post">
-                      <div class="blog_details">
+            <section className="blog_area single-post-area">
+              <div className="container">
+                <div className="row">
+                  <div className="col-lg-8 posts-list">
+                    <div className="single-post">
+                      <div className="blog_details">
                         {this.state.legal.description && (
                           <Markdown
                             options={{
@@ -62,8 +62,8 @@ export default class Legal extends Component {
                       </div>
                     </div>
                   </div>
-                  <div class="col-lg-4">
-                    <div class="blog_right_sidebar">
+                  <div className="col-lg-4">
+                    <div className="blog_right_sidebar">
                       <Sidebar />
                     </div>
                   </div>

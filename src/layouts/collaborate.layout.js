@@ -17,13 +17,13 @@ export default class Collaborate extends Component {
           />
         </Helmet>
         {/* <!-- Services Area Start --> */}
-        <section class="service-area services-padding sky-blue">
+        <section className="service-area services-padding sky-blue">
           <Breadcrumb />
-          <div class="container">
+          <div className="container">
             {/* <!-- Section Tittle --> */}
-            <div class="row d-flex justify-content-center">
-              <div class="col-lg-6">
-                <div class="section-tittle text-center">
+            <div className="row d-flex justify-content-center">
+              <div className="col-lg-6">
+                <div className="section-tittle text-center">
                   <h2>
                     How Can We Help You with Dopamine!
                     <p>
@@ -35,19 +35,19 @@ export default class Collaborate extends Component {
               </div>
             </div>
             {/* <!-- Section caption --> */}
-            <div class="row">
-              <div class="col-xl-4 col-lg-4 col-md-6">
-                <div class="services-caption text-center mb-30">
-                  <div class="service-icon">
+            <div className="row">
+              <div className="col-xl-4 col-lg-4 col-md-6">
+                <div className="services-caption text-center mb-30">
+                  <div className="service-icon">
                     <span>
                       <img
-                        class="img-fluid"
+                        className="img-fluid"
                         src={require("../static/img/new/reach.png")}
                         alt="increase your reach with Dopamine"
                       />
                     </span>
                   </div>
-                  <div class="service-cap">
+                  <div className="service-cap">
                     <h4>
                       <a href="#">Reach out to our audience</a>
                     </h4>
@@ -55,18 +55,18 @@ export default class Collaborate extends Component {
                   </div>
                 </div>
               </div>
-              <div class="col-xl-4 col-lg-4 col-md-6">
-                <div class="services-caption active text-center mb-30">
-                  <div class="service-icon">
+              <div className="col-xl-4 col-lg-4 col-md-6">
+                <div className="services-caption active text-center mb-30">
+                  <div className="service-icon">
                     <span>
                       <img
-                        class="img-fluid"
+                        className="img-fluid"
                         src={require("../static/img/new/web.png")}
                         alt="get website redirects from dopamine magazine"
                       />
                     </span>
                   </div>
-                  <div class="service-cap">
+                  <div className="service-cap">
                     <h4>
                       <a href="#">Redirect to your website / social media</a>
                     </h4>
@@ -77,18 +77,18 @@ export default class Collaborate extends Component {
                   </div>
                 </div>
               </div>
-              <div class="col-xl-4 col-lg-4 col-md-6">
-                <div class="services-caption text-center mb-30">
-                  <div class="service-icon">
+              <div className="col-xl-4 col-lg-4 col-md-6">
+                <div className="services-caption text-center mb-30">
+                  <div className="service-icon">
                     <span>
                       <img
-                        class="img-fluid"
+                        className="img-fluid"
                         src={require("../static/img/new/social.png")}
                         alt="get likes and share with dopamine magazine"
                       />
                     </span>
                   </div>
-                  <div class="service-cap">
+                  <div className="service-cap">
                     <h4>
                       <a href="#">Leverage from our engagement</a>
                     </h4>
@@ -104,50 +104,50 @@ export default class Collaborate extends Component {
         {/* <!-- Services Area End --> */}
 
         {/* <!-- Best Features Start --> */}
-        <section class="best-features-area pb-100 pt-100 ">
-          <div class="container">
+        <section className="best-features-area pb-100 pt-100 ">
+          <div className="container">
             {/* <!-- Section Tittle --> */}
             {/* <!-- Section caption --> */}
-            <div class="row">
-              <div class="col-lg-3 col-md-6">
-                <div class="single-features mb-70">
-                  <div class="features-icon">
-                    <span class="fa fa-bookmark"></span>
+            <div className="row">
+              <div className="col-lg-3 col-md-6">
+                <div className="single-features mb-70">
+                  <div className="features-icon">
+                    <span className="fa fa-bookmark"></span>
                   </div>
-                  <div class="features-caption">
+                  <div className="features-caption">
                     <h3>10,396+</h3>
                     <p>Magazine Readers</p>
                   </div>
                 </div>
               </div>
-              <div class="col-lg-3 col-md-6">
-                <div class="single-features mb-70">
-                  <div class="features-icon">
-                    <span class="fa fa-users"></span>
+              <div className="col-lg-3 col-md-6">
+                <div className="single-features mb-70">
+                  <div className="features-icon">
+                    <span className="fa fa-users"></span>
                   </div>
-                  <div class="features-caption">
+                  <div className="features-caption">
                     <h3>2,024+</h3>
                     <p>Instagram Followers</p>
                   </div>
                 </div>
               </div>
-              <div class="col-lg-3 col-md-6">
-                <div class="single-features mb-70">
-                  <div class="features-icon">
-                    <span class="fa fa-heart"></span>
+              <div className="col-lg-3 col-md-6">
+                <div className="single-features mb-70">
+                  <div className="features-icon">
+                    <span className="fa fa-heart"></span>
                   </div>
-                  <div class="features-caption">
+                  <div className="features-caption">
                     <h3>12,000+</h3>
                     <p>Post Likes</p>
                   </div>
                 </div>
               </div>
-              <div class="col-lg-3 col-md-6">
-                <div class="single-features mb-70">
-                  <div class="features-icon">
-                    <span class="fa fa-gift"></span>
+              <div className="col-lg-3 col-md-6">
+                <div className="single-features mb-70">
+                  <div className="features-icon">
+                    <span className="fa fa-gift"></span>
                   </div>
-                  <div class="features-caption">
+                  <div className="features-caption">
                     <h3>5,000+</h3>
                     <p>Weekly Impressions</p>
                   </div>
@@ -158,13 +158,13 @@ export default class Collaborate extends Component {
         </section>
         {/* <!-- Best Features End --> */}
         {/* <!-- Our Customer Start --> */}
-        <div class="our-customer pt-50 pb-100">
-          <div class="container-fluid">
-            <div class="our-customer-wrapper">
+        <div className="our-customer pt-50 pb-100">
+          <div className="container-fluid">
+            <div className="our-customer-wrapper">
               {/* <!-- Section Tittle --> */}
-              <div class="row d-flex justify-content-center">
-                <div class="col-xl-8">
-                  <div class="section-tittle text-center">
+              <div className="row d-flex justify-content-center">
+                <div className="col-xl-8">
+                  <div className="section-tittle text-center">
                     <h2>
                       Testimonials
                       <p>Hear it from our collaborators in their own words!</p>
@@ -172,17 +172,17 @@ export default class Collaborate extends Component {
                   </div>
                 </div>
               </div>
-              <div class="row">
-                <div class="col-12">
-                  <div class="customar-active dot-style d-flex dot-style">
-                    <div class="single-customer mb-100">
-                      <div class="what-img">
+              <div className="row">
+                <div className="col-12">
+                  <div className="customar-active dot-style d-flex dot-style">
+                    <div className="single-customer mb-100">
+                      <div className="what-img">
                         <img
                           src={require("../static/img/testmonial/Ajay-Singh-Peelwa.png")}
                           alt="Ajay Singh Peelwa"
                         />
                       </div>
-                      <div class="what-cap">
+                      <div className="what-cap">
                         <h4>
                           <a href="https://www.instagram.com/pinkcitypodcast/">
                             Lakshaya Arora
@@ -203,14 +203,14 @@ export default class Collaborate extends Component {
                       </div>
                     </div>
 
-                    <div class="single-customer mb-100">
-                      <div class="what-img">
+                    <div className="single-customer mb-100">
+                      <div className="what-img">
                         <img
                           src={require("../static/img/testmonial/Ajay-Singh-Peelwa.png")}
                           alt="Ajay Singh Peelwa"
                         />
                       </div>
-                      <div class="what-cap">
+                      <div className="what-cap">
                         <h4>
                           <a href="https://www.instagram.com/soshiadventures/">
                             Devanshi & Soumiya​
@@ -227,14 +227,14 @@ export default class Collaborate extends Component {
                       </div>
                     </div>
 
-                    <div class="single-customer mb-100">
-                      <div class="what-img">
+                    <div className="single-customer mb-100">
+                      <div className="what-img">
                         <img
                           src={require("../static/img/testmonial/Ajay-Singh-Peelwa.png")}
                           alt="Ajay Singh Peelwa"
                         />
                       </div>
-                      <div class="what-cap">
+                      <div className="what-cap">
                         <h4>
                           <a href="https://www.facebook.com/Ajay-Singh-Peelwa-Artworks-1396297390643408/">
                             Ajay Singh Peelwa
@@ -254,14 +254,14 @@ export default class Collaborate extends Component {
                       </div>
                     </div>
 
-                    <div class="single-customer mb-100">
-                      <div class="what-img">
+                    <div className="single-customer mb-100">
+                      <div className="what-img">
                         <img
                           src={require("../static/img/testmonial/Payal-Lulla.png")}
                           alt="Payal Lulla"
                         />
                       </div>
-                      <div class="what-cap">
+                      <div className="what-cap">
                         <h4>
                           <a href="https://www.instagram.com/payal_lulla_arts/">
                             Payal Lulla

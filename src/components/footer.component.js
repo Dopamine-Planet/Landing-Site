@@ -4,14 +4,14 @@ export default class Footer extends Component {
   render() {
     return (
       <footer>
-        <div class="footer-main">
-          <div class="footer-area footer-padding">
-            <div class="container">
-              <div class="row  justify-content-between">
-                <div class="col-lg-4 col-md-8 col-sm-8">
-                  <div class="single-footer-caption mb-30">
+        <div className="footer-main">
+          <div className="footer-area footer-padding">
+            <div className="container">
+              <div className="row  justify-content-between">
+                <div className="col-lg-4 col-md-8 col-sm-8">
+                  <div className="single-footer-caption mb-30">
                     {/* <!-- logo --> */}
-                    <div class="footer-logo">
+                    <div className="footer-logo">
                       <a href="index.html">
                         <img
                           src={require("../static/img/logo/logo2_footer.png")}
@@ -19,9 +19,9 @@ export default class Footer extends Component {
                         />
                       </a>
                     </div>
-                    <div class="footer-tittle">
-                      <div class="footer-pera">
-                        <p class="info1">
+                    <div className="footer-tittle">
+                      <div className="footer-pera">
+                        <p className="info1">
                           Dopamine is an ongoing investigation on positivity, a
                           collection of some candid first-hand experiences. We,
                           a bunch of creative enthusiasts, are on a quest to
@@ -34,59 +34,57 @@ export default class Footer extends Component {
                     </div>
                   </div>
                 </div>
-                <div class="col-lg-3 col-md-6 col-sm-8">
-                  <div class="single-footer-caption mb-50">
-                    <div class="footer-tittle">
+                <div className="col-lg-3 col-md-6 col-sm-8">
+                  <div className="single-footer-caption mb-50">
+                    <div className="footer-tittle">
                       <h4>Newsletter</h4>
-                      <div class="footer-pera footer-pera2">
+                      <div className="footer-pera footer-pera2">
                         <p>Stay updated with our positive shenanigans!</p>
                       </div>
                       {/* <!-- Form --> */}
-                      <div class="footer-form">
+                      <div className="footer-form">
                         <div id="mc_embed_signup">
                           <form
                             target="_blank"
                             action="https://spondonit.us12.list-manage.com/subscribe/post?u=1462626880ade1ac87bd9c93a&amp;id=92a4423d01"
                             method="get"
-                            class="subscribe_form relative mail_part"
-                            novalidate="true"
+                            className="subscribe_form relative mail_part"
+                            noValidate={true}
                           >
-                            <label for="newsletter-form-email">
+                            <label htmlFor="newsletter-form-email">
                               <input
                                 type="email"
                                 name="EMAIL"
                                 id="newsletter-form-email"
                                 placeholder=" Email Address "
-                                class="placeholder hide-on-focus"
-                                onfocus="this.placeholder = ''"
-                                onblur="this.placeholder = ' Email Address '"
+                                className="placeholder hide-on-focus"
                               />
                             </label>
-                            <div class="form-icon">
+                            <div className="form-icon">
                               <button
                                 type="submit"
                                 name="submit"
                                 id="newsletter-submit"
-                                class="email_icon newsletter-submit button-contactForm"
+                                className="email_icon newsletter-submit button-contactForm"
                               >
                                 <img
                                   src={require("../static/img/shape/form_icon.png")}
-                                  alt="Send Email Image"
+                                  alt="Send Email Button"
                                 />
                               </button>
                             </div>
-                            <div class="mt-10 info"></div>
+                            <div className="mt-10 info"></div>
                           </form>
                         </div>
                       </div>
-                      <ul class="social-icons footer-social">
+                      <ul className="social-icons footer-social">
                         <li>
                           <a
                             href="https://www.instagram.com/dopamineplanet/"
                             target="_blank"
                             rel="noreferrer noopener"
                           >
-                            <i class="fab fa-instagram"></i>
+                            <i className="fab fa-instagram"></i>
                           </a>
                         </li>
                         <li>
@@ -95,7 +93,7 @@ export default class Footer extends Component {
                             target="_blank"
                             rel="noreferrer noopener"
                           >
-                            <i class="fab fa-facebook-f"></i>
+                            <i className="fab fa-facebook-f"></i>
                           </a>
                         </li>
                         <li>
@@ -104,7 +102,7 @@ export default class Footer extends Component {
                             target="_blank"
                             rel="noreferrer noopener"
                           >
-                            <i class="fab fa-linkedin"></i>
+                            <i className="fab fa-linkedin"></i>
                           </a>
                         </li>
                         <li>
@@ -113,22 +111,22 @@ export default class Footer extends Component {
                             target="_blank"
                             rel="noreferrer noopener"
                           >
-                            <i class="fab fa-twitter"></i>
+                            <i className="fab fa-twitter"></i>
                           </a>
                         </li>
                       </ul>
                     </div>
                   </div>
                 </div>
-                <div class="col-lg-3 col-md-4 col-sm-7">
-                  <div class="single-footer-caption mb-50">
-                    <div class="footer-tittle">
+                <div className="col-lg-3 col-md-4 col-sm-7">
+                  <div className="single-footer-caption mb-50">
+                    <div className="footer-tittle">
                       <h4>Contact Us</h4>
-                      <div class="media contact-info">
-                        <span class="contact-info__icon">
-                          <i class="ti-home"></i>
+                      <div className="media contact-info">
+                        <span className="contact-info__icon">
+                          <i className="ti-home"></i>
                         </span>
-                        <div class="media-body">
+                        <div className="media-body">
                           <h3>
                             <a
                               href="https://www.google.com/maps/place/The+LNM+Institute+of+Information+Technology/@26.9362789,75.9215104,16.75z"
@@ -141,11 +139,11 @@ export default class Footer extends Component {
                           <p>RJ, India 302031</p>
                         </div>
                       </div>
-                      <div class="media contact-info">
-                        <span class="contact-info__icon">
-                          <i class="ti-tablet"></i>
+                      <div className="media contact-info">
+                        <span className="contact-info__icon">
+                          <i className="ti-tablet"></i>
                         </span>
-                        <div class="media-body">
+                        <div className="media-body">
                           <h3>
                             <a
                               href="tel:+917073637246"
@@ -158,11 +156,11 @@ export default class Footer extends Component {
                           <p>Feel free to call us</p>
                         </div>
                       </div>
-                      <div class="media contact-info">
-                        <span class="contact-info__icon">
-                          <i class="ti-email"></i>
+                      <div className="media contact-info">
+                        <span className="contact-info__icon">
+                          <i className="ti-email"></i>
                         </span>
-                        <div class="media-body">
+                        <div className="media-body">
                           <h3>
                             <a
                               href="mailto:contact@dopamineplanet.com"
@@ -180,14 +178,15 @@ export default class Footer extends Component {
                 </div>
               </div>
               {/* <!-- Copy-Right --> */}
-              <div class="row align-items-center">
-                <div class="col-xl-12 ">
-                  <div class="footer-copy-right">
+              <div className="row align-items-center">
+                <div className="col-xl-12 ">
+                  <div className="footer-copy-right">
                     <p>
                       &copy;{" "}
                       <script>document.write(new Date().getFullYear());</script>{" "}
                       Dopamine Planet. All rights reserved | This website is
-                      made with <i class="ti-heart" aria-hidden="true"></i> by{" "}
+                      made with <i className="ti-heart" aria-hidden="true"></i>{" "}
+                      by{" "}
                       <a
                         href="https://colorlib.com"
                         target="_blank"

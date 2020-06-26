@@ -33,13 +33,13 @@ export default class Issue extends Component {
           )}
         </Helmet>
         {/* <!-- Slider Area Start--> */}
-        <div class="services-area">
+        <div className="services-area">
           <Breadcrumb />
-          <div class="container">
+          <div className="container">
             {/* <!-- Section-tittle --> */}
-            <div class="row d-flex justify-content-center">
-              <div class="col-lg-8">
-                <div class="section-tittle text-center mb-80">
+            <div className="row d-flex justify-content-center">
+              <div className="col-lg-8">
+                <div className="section-tittle text-center mb-80">
                   <h2>
                     {this.state.magazine.title || <Skeleton />}
                     <p>
@@ -49,22 +49,22 @@ export default class Issue extends Component {
                 </div>
               </div>
             </div>
-            <div class="row d-flex justify-content-center">
-              <div class="col-lg-9 text-center">
-                <div class="feature-img">
+            <div className="row d-flex justify-content-center">
+              <div className="col-lg-9 text-center">
+                <div className="feature-img">
                   {this.state.magazine.display ? (
                     this.state.magazine.display.embed ? (
                       <div
-                        class="embed-container"
+                        className="embed-container"
                         data-page-width="453"
                         data-page-height="640"
                         id="ypembedcontainer"
                       >
                         <iframe
                           src={this.state.magazine.display.embed}
-                          frameborder="0"
+                          frameBorder="0"
                           title={this.state.magazine.title}
-                          allowfullscreen="true"
+                          allowFullScreen="true"
                           allowtransparency="true"
                         ></iframe>
                       </div>
@@ -73,10 +73,10 @@ export default class Issue extends Component {
                         href={this.state.magazine.display.link}
                         target="_blank"
                         rel="noreferrer noopener"
-                        class="magazine-gif"
+                        className="magazine-gif"
                       >
                         <img
-                          class="img-fluid"
+                          className="img-fluid"
                           src={require(`../static/img/${this.state.magazine.display.teaser}`)}
                           alt={this.state.magazine.title}
                         />
@@ -86,27 +86,27 @@ export default class Issue extends Component {
                     <Skeleton height={300} />
                   )}
                 </div>
-                <div class="section-tittle">
+                <div className="section-tittle">
                   <h3>
                     <br />
                   </h3>
                 </div>
-                <div class="section-tittle">
+                <div className="section-tittle">
                   <h3>Read it. Feel it. Absorb it. And share it!</h3>
                 </div>
-                <div class="section-tittle">
+                <div className="section-tittle">
                   <h3>
                     <br />
                   </h3>
                 </div>
 
-                <div class="slider-btns">
+                <div className="slider-btns">
                   {/* <!-- Hero-btn --> */}
                   <a
                     data-animation="fadeInLeft"
                     data-delay="1.0s"
                     href="https://docs.google.com/forms/d/e/1FAIpQLScLK4Hhe9YK_nJw0wbIUEmoavJvn2SqUOwSOKQh-gRGCozcFw/viewform"
-                    class="btn radius-btn mb-4 mr-4"
+                    className="btn radius-btn mb-4 mr-4"
                   >
                     GIVE FEEDBACK
                   </a>
@@ -115,7 +115,7 @@ export default class Issue extends Component {
                     data-animation="fadeInLeft"
                     data-delay="1.0s"
                     href="https://docs.google.com/forms/d/e/1FAIpQLScaVzYFnT8nVicqn8HZCr0Iw0y6SrMQHrMz4xx4o1loNFGVew/viewform"
-                    class="btn radius-btn card-btn1 mb-4"
+                    className="btn radius-btn card-btn1 mb-4"
                   >
                     Get Featured
                   </a>
@@ -127,12 +127,12 @@ export default class Issue extends Component {
         {/* <!-- Slider Area End--> */}
 
         {/* <!-- Best Features Start --> */}
-        <section class="best-features-area mt-100 pt-100 sky-blue">
-          <div class="container">
+        <section className="best-features-area mt-100 pt-100 sky-blue">
+          <div className="container">
             {/* <!-- Section Tittle --> */}
-            <div class="row d-flex justify-content-center">
-              <div class="col-lg-6">
-                <div class="section-tittle text-center">
+            <div className="row d-flex justify-content-center">
+              <div className="col-lg-6">
+                <div className="section-tittle text-center">
                   <h2>
                     Contributors
                     <p>
@@ -145,19 +145,19 @@ export default class Issue extends Component {
               </div>
             </div>
             {/* <!-- Section caption --> */}
-            <div class="row">
-              <div class="col-lg-4 col-md-6">
-                <div class="single-features mb-70">
-                  <div class="features-icon">
+            <div className="row">
+              <div className="col-lg-4 col-md-6">
+                <div className="single-features mb-70">
+                  <div className="features-icon">
                     <span>
                       <img
-                        class="img-fluid"
+                        className="img-fluid"
                         src={require("../static/img/contributors/writer.png")}
                         alt={this.state.magazine.title + "Writers"}
                       />
                     </span>
                   </div>
-                  <div class="features-caption">
+                  <div className="features-caption">
                     <h3>Writers</h3>
                     <p>
                       {this.state.magazine.contributors ? (
@@ -180,18 +180,18 @@ export default class Issue extends Component {
                   </div>
                 </div>
               </div>
-              <div class="col-lg-4 col-md-6">
-                <div class="single-features mb-70">
-                  <div class="features-icon">
+              <div className="col-lg-4 col-md-6">
+                <div className="single-features mb-70">
+                  <div className="features-icon">
                     <span>
                       <img
-                        class="img-fluid"
+                        className="img-fluid"
                         src={require("../static/img/contributors/designers.png")}
                         alt={this.state.magazine.title + "Designers"}
                       />
                     </span>
                   </div>
-                  <div class="features-caption">
+                  <div className="features-caption">
                     <h3>Designers</h3>
                     <p>
                       {this.state.magazine.contributors ? (
@@ -214,18 +214,18 @@ export default class Issue extends Component {
                   </div>
                 </div>
               </div>
-              <div class="col-lg-4 col-md-6">
-                <div class="single-features mb-70">
-                  <div class="features-icon">
+              <div className="col-lg-4 col-md-6">
+                <div className="single-features mb-70">
+                  <div className="features-icon">
                     <span>
                       <img
-                        class="img-fluid"
+                        className="img-fluid"
                         src={require("../static/img/contributors/photo.png")}
                         alt={this.state.magazine.title + "Photography"}
                       />
                     </span>
                   </div>
-                  <div class="features-caption">
+                  <div className="features-caption">
                     <h3>Photography</h3>
                     <p>
                       {this.state.magazine.contributors ? (
@@ -248,18 +248,18 @@ export default class Issue extends Component {
                   </div>
                 </div>
               </div>
-              <div class="col-lg-4 col-md-6">
-                <div class="single-features mb-70">
-                  <div class="features-icon">
+              <div className="col-lg-4 col-md-6">
+                <div className="single-features mb-70">
+                  <div className="features-icon">
                     <span>
                       <img
-                        class="img-fluid"
+                        className="img-fluid"
                         src={require("../static/img/contributors/art.png")}
                         alt={this.state.magazine.title + "Artists"}
                       />
                     </span>
                   </div>
-                  <div class="features-caption">
+                  <div className="features-caption">
                     <h3>Artists and Illustrators</h3>
                     <p>
                       {this.state.magazine.contributors ? (
@@ -282,18 +282,18 @@ export default class Issue extends Component {
                   </div>
                 </div>
               </div>
-              <div class="col-lg-4 col-md-6">
-                <div class="single-features mb-70">
-                  <div class="features-icon">
+              <div className="col-lg-4 col-md-6">
+                <div className="single-features mb-70">
+                  <div className="features-icon">
                     <span>
                       <img
-                        class="img-fluid"
+                        className="img-fluid"
                         src={require("../static/img/contributors/review.png")}
                         alt={this.state.magazine.title + "Reviewers"}
                       />
                     </span>
                   </div>
-                  <div class="features-caption">
+                  <div className="features-caption">
                     <h3>Reviewers</h3>
                     <p>
                       {this.state.magazine.contributors ? (
@@ -316,18 +316,18 @@ export default class Issue extends Component {
                   </div>
                 </div>
               </div>
-              <div class="col-lg-4 col-md-6">
-                <div class="single-features mb-70">
-                  <div class="features-icon">
+              <div className="col-lg-4 col-md-6">
+                <div className="single-features mb-70">
+                  <div className="features-icon">
                     <span>
                       <img
-                        class="img-fluid"
+                        className="img-fluid"
                         src={require("../static/img/contributors/editors.png")}
                         alt={this.state.magazine.title + "Editors"}
                       />
                     </span>
                   </div>
-                  <div class="features-caption">
+                  <div className="features-caption">
                     <h3>Editors</h3>
                     <p>
                       {this.state.magazine.contributors ? (

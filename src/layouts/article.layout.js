@@ -69,13 +69,13 @@ export default class BlogDetails extends Component {
           ></script>
         </Helmet>
         {/* <!-- Slider Area Start--> */}
-        <div class="services-area">
+        <div className="services-area">
           <Breadcrumb />
-          <div class="container">
+          <div className="container">
             {/* <!-- Section-tittle --> */}
-            <div class="row d-flex justify-content-center">
-              <div class="col-lg-8">
-                <div class="section-tittle text-center mb-80">
+            <div className="row d-flex justify-content-center">
+              <div className="col-lg-8">
+                <div className="section-tittle text-center mb-80">
                   <h2>{this.state.blog.title || <Skeleton />}</h2>
                 </div>
               </div>
@@ -84,36 +84,36 @@ export default class BlogDetails extends Component {
         </div>
         {/* <!-- Slider Area End--> */}
         {/* <!--================Blog Area =================--> */}
-        <section class="blog_area single-post-area">
-          <div class="container">
-            <div class="row">
-              <div class="col-lg-8 posts-list">
+        <section className="blog_area single-post-area">
+          <div className="container">
+            <div className="row">
+              <div className="col-lg-8 posts-list">
                 <BlogArticle blog={this.state.blog} />
-                <div class="navigation-top">
-                  <div class="d-sm-flex justify-content-between text-center">
-                    <p class="like-info">
-                      <span class="align-middle">
-                        <i class="fa fa-bookmark"></i>
+                <div className="navigation-top">
+                  <div className="d-sm-flex justify-content-between text-center">
+                    <p className="like-info">
+                      <span className="align-middle">
+                        <i className="fa fa-bookmark"></i>
                       </span>{" "}
                       <a
                         href={`/blog?category=${this.state.blog.category}`}
-                        class="text-dark"
+                        className="text-dark"
                       >
                         {this.state.blog.category || <Skeleton />}
                       </a>
                     </p>
-                    <div class="col-sm-4 text-center my-2 my-sm-0">
-                      {/* <!-- <p class="comment-count"><span class="align-middle"><i class="fa fa-comment"></i></span> 06 Comments</p> --> */}
+                    <div className="col-sm-4 text-center my-2 my-sm-0">
+                      {/* <!-- <p className="comment-count"><span className="align-middle"><i className="fa fa-comment"></i></span> 06 Comments</p> --> */}
                     </div>
                     {this.state.blog.title && (
-                      <ul class="social-icons">
+                      <ul className="social-icons">
                         <li>
                           <a
                             href={`https://api.whatsapp.com/send?phone=&text=${this.state.blog.title} - https://dopamineplanet.com/blog/${this.state.blog.slug}`}
                             target="_blank"
                             rel="noreferrer noopener"
                           >
-                            <i class="fab fa-whatsapp"></i>
+                            <i className="fab fa-whatsapp"></i>
                           </a>
                         </li>
                         <li>
@@ -122,7 +122,7 @@ export default class BlogDetails extends Component {
                             target="_blank"
                             rel="noreferrer noopener"
                           >
-                            <i class="fab fa-facebook-f"></i>
+                            <i className="fab fa-facebook-f"></i>
                           </a>
                         </li>
                         <li>
@@ -131,7 +131,7 @@ export default class BlogDetails extends Component {
                             target="_blank"
                             rel="noreferrer noopener"
                           >
-                            <i class="fab fa-linkedin"></i>
+                            <i className="fab fa-linkedin"></i>
                           </a>
                         </li>
                         <li>
@@ -140,7 +140,7 @@ export default class BlogDetails extends Component {
                             target="_blank"
                             rel="noreferrer noopener"
                           >
-                            <i class="fab fa-twitter"></i>
+                            <i className="fab fa-twitter"></i>
                           </a>
                         </li>
                         <li>
@@ -149,52 +149,52 @@ export default class BlogDetails extends Component {
                             target="_blank"
                             rel="noreferrer noopener"
                           >
-                            <i class="fa fa-envelope"></i>
+                            <i className="fa fa-envelope"></i>
                           </a>
                         </li>
                       </ul>
                     )}
                   </div>
-                  <div class="navigation-area">
-                    <div class="row">
-                      <div class="col-lg-6 col-md-6 col-12 nav-left flex-row d-flex justify-content-start align-items-center">
-                        <div class="thumb">
+                  <div className="navigation-area">
+                    <div className="row">
+                      <div className="col-lg-6 col-md-6 col-12 nav-left flex-row d-flex justify-content-start align-items-center">
+                        <div className="thumb">
                           <a href="/blog/self-love">
                             <img
-                              class="img-fluid dp-responsive-img"
+                              className="img-fluid dp-responsive-img"
                               src={require("../static/img/blog/single_blog_2.png")}
                               alt="Self Love: The Key to a Happy Life | Dopamine"
                             />
                           </a>
                         </div>
-                        <div class="arrow">
+                        <div className="arrow">
                           <a href="/blog/self-love">
-                            <span class="lnr text-white ti-arrow-left"></span>
+                            <span className="lnr text-white ti-arrow-left"></span>
                           </a>
                         </div>
-                        <div class="detials">
+                        <div className="detials">
                           <p>Prev Post</p>
                           <a href="/blog/self-love">
                             <h4>Self Love: The Key to a Happy Life​</h4>
                           </a>
                         </div>
                       </div>
-                      <div class="col-lg-6 col-md-6 col-12 nav-right flex-row d-flex justify-content-end align-items-center">
-                        <div class="detials">
+                      <div className="col-lg-6 col-md-6 col-12 nav-right flex-row d-flex justify-content-end align-items-center">
+                        <div className="detials">
                           <p>Next Post</p>
                           <a href="/blog/soshi">
                             <h4>Soshi's: Making life delicious</h4>
                           </a>
                         </div>
-                        <div class="arrow">
+                        <div className="arrow">
                           <a href="/blog/soshi">
-                            <span class="lnr text-white ti-arrow-right"></span>
+                            <span className="lnr text-white ti-arrow-right"></span>
                           </a>
                         </div>
-                        <div class="thumb">
+                        <div className="thumb">
                           <a href="/blog/soshi">
                             <img
-                              class="img-fluid dp-responsive-img"
+                              className="img-fluid dp-responsive-img"
                               src={require("../static/img/blog/single_blog_1.png")}
                               alt="Soshi's: Making life delicious | Dopamine"
                             />
@@ -205,7 +205,7 @@ export default class BlogDetails extends Component {
                   </div>
                 </div>
                 <Author author={this.state.blog.author} />
-                <div class="comments-area">
+                <div className="comments-area">
                   <h4>
                     {this.state.blog.comments &&
                       this.state.blog.comments.length}{" "}
@@ -213,10 +213,10 @@ export default class BlogDetails extends Component {
                   </h4>
                   {this.state.blog.comments &&
                     this.state.blog.comments.map((comment, i) => (
-                      <div class="comment-list">
-                        <div class="single-comment justify-content-between d-flex">
-                          <div class="user justify-content-between d-flex">
-                            <div class="thumb">
+                      <div className="comment-list">
+                        <div className="single-comment justify-content-between d-flex">
+                          <div className="user justify-content-between d-flex">
+                            <div className="thumb">
                               {comment.name ? (
                                 <img
                                   src={require("../static/img/comment/comment_3.png")}
@@ -226,24 +226,22 @@ export default class BlogDetails extends Component {
                                 <Skeleton />
                               )}
                             </div>
-                            <div class="desc">
-                              <p class="comment">
+                            <div className="desc">
+                              <p className="comment">
                                 {comment.text || <Skeleton count={2} />}
                               </p>
-                              <div class="d-flex justify-content-between">
-                                <div class="d-flex align-items-center">
-                                  <h5>
-                                    <a href="#">
-                                      {comment.name || <Skeleton />}
-                                    </a>
-                                  </h5>
-                                  <p class="date">
+                              <div className="d-flex justify-content-between">
+                                <div className="d-flex align-items-center">
+                                  <h5>{comment.name || <Skeleton />}</h5>
+                                  <p className="date">
                                     {comment.date || <Skeleton />}
                                   </p>
                                 </div>
-                                <div class="reply-btn">
-                                  <a class="btn-reply text-uppercase">reply</a>
-                                </div>
+                                {/* <div className="reply-btn">
+                                  <a className="btn-reply text-uppercase">
+                                    reply
+                                  </a>
+                                </div> */}
                               </div>
                             </div>
                           </div>
@@ -251,21 +249,21 @@ export default class BlogDetails extends Component {
                       </div>
                     ))}
                 </div>
-                <div class="comment-form">
+                <div className="comment-form">
                   <h4>Leave a Reply</h4>
-                  <div class="genric-btn success circle mb-3">
+                  <div className="genric-btn success circle mb-3">
                     {this.state.notif}
                   </div>
                   <form
-                    class="form-contact comment_form"
+                    className="form-contact comment_form"
                     onSubmit={this.onComment}
                     id="commentForm"
                   >
-                    <div class="row">
-                      <div class="col-12">
-                        <div class="form-group">
+                    <div className="row">
+                      <div className="col-12">
+                        <div className="form-group">
                           <textarea
-                            class="form-control w-100"
+                            className="form-control w-100"
                             name="text"
                             id="text"
                             cols="30"
@@ -275,10 +273,10 @@ export default class BlogDetails extends Component {
                           ></textarea>
                         </div>
                       </div>
-                      <div class="col-sm-6">
-                        <div class="form-group">
+                      <div className="col-sm-6">
+                        <div className="form-group">
                           <input
-                            class="form-control"
+                            className="form-control"
                             name="name"
                             id="name"
                             type="text"
@@ -287,10 +285,10 @@ export default class BlogDetails extends Component {
                           />
                         </div>
                       </div>
-                      <div class="col-sm-6">
-                        <div class="form-group">
+                      <div className="col-sm-6">
+                        <div className="form-group">
                           <input
-                            class="form-control"
+                            className="form-control"
                             name="email"
                             id="email"
                             type="email"
@@ -299,10 +297,10 @@ export default class BlogDetails extends Component {
                           />
                         </div>
                       </div>
-                      <div class="col-12">
-                        <div class="form-group">
+                      <div className="col-12">
+                        <div className="form-group">
                           <input
-                            class="form-control"
+                            className="form-control"
                             name="phone"
                             id="phone"
                             type="number"
@@ -312,10 +310,10 @@ export default class BlogDetails extends Component {
                         </div>
                       </div>
                     </div>
-                    <div class="form-group">
+                    <div className="form-group">
                       <button
                         type="submit"
-                        class="button button-contactForm btn_1 boxed-btn"
+                        className="button button-contactForm btn_1 boxed-btn"
                       >
                         Send Message
                       </button>
@@ -323,8 +321,8 @@ export default class BlogDetails extends Component {
                   </form>
                 </div>
               </div>
-              <div class="col-lg-4">
-                <div class="blog_right_sidebar">
+              <div className="col-lg-4">
+                <div className="blog_right_sidebar">
                   <Sidebar />
                 </div>
               </div>

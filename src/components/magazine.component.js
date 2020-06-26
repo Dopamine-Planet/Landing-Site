@@ -19,13 +19,13 @@ export default class Magazine extends Component {
 
   render() {
     return (
-      <div class="our-customer section-padd-top30">
-        <div class="container-fluid">
-          <div class="our-customer-wrapper">
+      <div className="our-customer section-padd-top30">
+        <div className="container-fluid">
+          <div className="our-customer-wrapper">
             {/* <!-- Section Tittle --> */}
-            <div class="row d-flex justify-content-center">
-              <div class="col-xl-8">
-                <div class="section-tittle text-center">
+            <div className="row d-flex justify-content-center">
+              <div className="col-xl-8">
+                <div className="section-tittle text-center">
                   <h2>
                     Our Magazines
                     <p>
@@ -36,13 +36,13 @@ export default class Magazine extends Component {
                 </div>
               </div>
             </div>
-            <div class="row">
-              <div class="col-12">
-                <div class="customar-active dot-style d-flex dot-style">
+            <div className="row">
+              <div className="col-12">
+                <div className="customar-active dot-style d-flex dot-style">
                   {this.state.magazines.map((issue, i) => (
-                    <div class="single-customer mb-100" key={i}>
+                    <div className="single-customer mb-100" key={i}>
                       <a href={`/magazines/${issue.slug}`}>
-                        <div class="what-img">
+                        <div className="what-img">
                           {/* {require(`../static/img/${issue.thumbnail}`) ? (
                             <img
                               src={require(`../static/img/${issue.thumbnail}`)}
@@ -52,7 +52,7 @@ export default class Magazine extends Component {
                             <Skeleton circle={true} height={70} width={70} />
                           )} */}
                         </div>
-                        <div class="what-cap">
+                        <div className="what-cap">
                           <h4>{issue.title || <Skeleton />}</h4>
                           <p>{issue.excerpt || <Skeleton />}</p>
                         </div>

@@ -30,12 +30,12 @@ const options = {
 export default class Screenshot extends Component {
   render() {
     return (
-      <div class="applic-apps section-padding2">
-        <div class="container-fluid">
-          <div class="row">
+      <div className="applic-apps section-padding2">
+        <div className="container-fluid">
+          <div className="row">
             {/* <!-- slider Heading --> */}
-            <div class="col-xl-4 col-lg-4 col-md-8">
-              <div class="single-cases-info mb-30">
+            <div className="col-xl-4 col-lg-4 col-md-8">
+              <div className="single-cases-info mb-30">
                 <h3>
                   Dopamine App
                   <br /> Screenshot
@@ -52,31 +52,31 @@ export default class Screenshot extends Component {
               {...options}
               className="owl-theme col-xl-8 col-lg-8 col-md-col-md-7"
             >
-              <div class="single-cases-img">
+              <div className="single-cases-img">
                 <img
                   src={require("../static/img/gallery/App1.png")}
                   alt="Dopamine Positivity WebApp Albums Screen Design"
                 />
               </div>
-              <div class="single-cases-img">
+              <div className="single-cases-img">
                 <img
                   src={require("../static/img/gallery/App2.png")}
                   alt="Dopamine Positivity WebApp Home Screen Design"
                 />
               </div>
-              <div class="single-cases-img">
+              <div className="single-cases-img">
                 <img
                   src={require("../static/img/gallery/App3.png")}
                   alt="Dopamine Positivity WebApp User Profile Screen Design"
                 />
               </div>
-              <div class="single-cases-img">
+              <div className="single-cases-img">
                 <img
                   src={require("../static/img/gallery/App4.png")}
                   alt="Dopamine Positivity WebApp Express Screen Design "
                 />
               </div>
-              <div class="single-cases-img">
+              <div className="single-cases-img">
                 <img
                   src={require("../static/img/gallery/App1.png")}
                   alt="Dopamine Positivity WebApp Features"
@@ -85,33 +85,33 @@ export default class Screenshot extends Component {
             </OwlCarousel>
             {/* react-Owl-end */}
             {/* <!-- OwL --> */}
-            <div class="col-xl-8 col-lg-8 col-md-col-md-7">
-              <div class="app-active owl-carousel">
-                <div class="single-cases-img">
+            <div className="col-xl-8 col-lg-8 col-md-col-md-7">
+              <div className="app-active owl-carousel">
+                <div className="single-cases-img">
                   <img
                     src={require("../static/img/gallery/App1.png")}
                     alt="Dopamine Positivity WebApp Features"
                   />
                 </div>
-                <div class="single-cases-img">
+                <div className="single-cases-img">
                   <img
                     src={require("../static/img/gallery/App2.png")}
                     alt="Dopamine Positivity WebApp Features"
                   />
                 </div>
-                <div class="single-cases-img">
+                <div className="single-cases-img">
                   <img
                     src={require("../static/img/gallery/App3.png")}
                     alt="Dopamine Positivity WebApp Features"
                   />
                 </div>
-                <div class="single-cases-img">
+                <div className="single-cases-img">
                   <img
                     src={require("../static/img/gallery/App4.png")}
                     alt="Dopamine Positivity WebApp Features"
                   />
                 </div>
-                <div class="single-cases-img">
+                <div className="single-cases-img">
                   <img
                     src={require("../static/img/gallery/App1.png")}
                     alt="Dopamine Positivity WebApp Features"

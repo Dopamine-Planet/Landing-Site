@@ -36,13 +36,13 @@ export default class Blog extends Component {
           />
         </Helmet>
         {/* <!-- Best Pricing Start --> */}
-        <section class="services-area">
+        <section className="services-area">
           <Breadcrumb />
-          <div class="container">
+          <div className="container">
             {/* <!-- Section-tittle --> */}
-            <div class="row d-flex justify-content-center">
-              <div class="col-lg-8">
-                <div class="section-tittle text-center mb-80">
+            <div className="row d-flex justify-content-center">
+              <div className="col-lg-8">
+                <div className="section-tittle text-center mb-80">
                   <h2>
                     Our Blog Area​
                     <p>
@@ -58,37 +58,37 @@ export default class Blog extends Component {
         {/* <!-- Best Pricing End --> */}
 
         {/* <!--================Blog Area =================--> */}
-        <section class="blog_area section-paddingr">
-          <div class="container">
-            <div class="row">
-              <div class="col-lg-8 mb-5 mb-lg-0">
-                <div class="blog_left_sidebar">
+        <section className="blog_area section-paddingr">
+          <div className="container">
+            <div className="row">
+              <div className="col-lg-8 mb-5 mb-lg-0">
+                <div className="blog_left_sidebar">
                   {this.state.blog.map((article, i) => (
                     <ArticleCard article={article} key={i} />
                   ))}
-                  {/* <!-- <nav class="blog-pagination justify-content-center d-flex">
-                    <ul class="pagination">
-                        <li class="page-item">
-                            <a href="#" class="page-link" aria-label="Previous">
-                                <i class="ti-angle-left"></i>
+                  {/* <!-- <nav className="blog-pagination justify-content-center d-flex">
+                    <ul className="pagination">
+                        <li className="page-item">
+                            <a href="#" className="page-link" aria-label="Previous">
+                                <i className="ti-angle-left"></i>
                             </a>
                         </li>
-                        <li class="page-item">
-                            <a href="#" class="page-link">1</a>
+                        <li className="page-item">
+                            <a href="#" className="page-link">1</a>
                         </li>
-                        <li class="page-item active">
-                            <a href="#" class="page-link">2</a>
+                        <li className="page-item active">
+                            <a href="#" className="page-link">2</a>
                         </li>
-                        <li class="page-item">
-                            <a href="#" class="page-link" aria-label="Next">
-                                <i class="ti-angle-right"></i>
+                        <li className="page-item">
+                            <a href="#" className="page-link" aria-label="Next">
+                                <i className="ti-angle-right"></i>
                             </a>
                         </li>
                     </ul>
                   </nav> --> */}
                 </div>
               </div>
-              <div class="col-lg-4">
+              <div className="col-lg-4">
                 <Sidebar />
               </div>
             </div>

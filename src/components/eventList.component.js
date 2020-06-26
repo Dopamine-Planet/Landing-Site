@@ -20,27 +20,27 @@ export default class EventList extends Component {
 
   render() {
     return (
-      <div class="pricing-card-area">
-        <div class="container">
-          <div class="row">
+      <div className="pricing-card-area">
+        <div className="container">
+          <div className="row">
             {this.state.events.map((event, i) => (
-              <div class="col-xl-4 col-lg-4 col-md-6" key={i}>
-                <div class="single-card text-center mb-30">
-                  <div class="card-top">
+              <div className="col-xl-4 col-lg-4 col-md-6" key={i}>
+                <div className="single-card text-center mb-30">
+                  <div className="card-top">
                     <span>{event.date || <Skeleton />}</span>
                     <h4>
                       {event.title}
                       <span>{event.subtitle || <Skeleton />}</span>
                     </h4>
                   </div>
-                  <div class="card-bottom">
+                  <div className="card-bottom">
                     <ul>
                       <li>{event.organizer || <Skeleton />}</li>
                       <li>{event.address || <Skeleton />}</li>
                     </ul>
                     <a
                       href={event.register}
-                      class="btn card-btn1"
+                      className="btn card-btn1"
                       target="_blank"
                       rel="noreferrer noopener"
                     >

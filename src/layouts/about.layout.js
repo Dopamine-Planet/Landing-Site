@@ -15,13 +15,13 @@ export default class About extends Component {
           />
         </Helmet>
         {/* <!-- Best Pricing Start --> */}
-        <section class="best-pricing best-pricing2 pricing-padding2">
+        <section className="best-pricing best-pricing2 pricing-padding2">
           <Breadcrumb />
-          <div class="container">
+          <div className="container">
             {/* <!-- Section Tittle --> */}
-            <div class="row d-flex justify-content-center">
-              <div class="col-lg-6 col-md-8">
-                <div class="section-tittle text-center">
+            <div className="row d-flex justify-content-center">
+              <div className="col-lg-6 col-md-8">
+                <div className="section-tittle text-center">
                   <h2>
                     About Us
                     <p>
@@ -37,19 +37,19 @@ export default class About extends Component {
         {/* <!-- Best Pricing End --> */}
 
         {/* <!-- Start Align Area --> */}
-        <div class="whole-wrap pricing-card-area">
-          <div class="container box_1170">
-            <div class="section-top-border">
-              <h3 class="mb-30">Our Vision</h3>
-              <div class="row">
-                <div class="col-md-4">
+        <div className="whole-wrap pricing-card-area">
+          <div className="container box_1170">
+            <div className="section-top-border">
+              <h3 className="mb-30">Our Vision</h3>
+              <div className="row">
+                <div className="col-md-4">
                   <img
                     src={require("../static/img/about/vision.png")}
                     alt="We are on a quest to provide positive content and make it a new norm, and strongly entail your life, beautifully yet subtly."
-                    class="img-fluid"
+                    className="img-fluid"
                   />
                 </div>
-                <div class="col-md-8 mt-sm-20">
+                <div className="col-md-8 mt-sm-20">
                   <p>
                     A glee, joyful life is at our fingertips. It’s we who have
                     to unfurl that magic within us. We, at Dopamine Planet, are
@@ -64,11 +64,11 @@ export default class About extends Component {
                 </div>
               </div>
             </div>
-            <div class="section-top-border text-right">
-              <h3 class="mb-30">Our Mission</h3>
-              <div class="row">
-                <div class="col-md-8">
-                  <p class="text-right">
+            <div className="section-top-border text-right">
+              <h3 className="mb-30">Our Mission</h3>
+              <div className="row">
+                <div className="col-md-8">
+                  <p className="text-right">
                     We hope this home of warmth and kindness leaves you with a
                     soothing comfort in your heart. In a world where everyone is
                     fixated at mending imperfections and only what’s wrong
@@ -85,26 +85,26 @@ export default class About extends Component {
                     .
                   </p>
                 </div>
-                <div class="col-md-4">
+                <div className="col-md-4">
                   <img
                     src={require("../static/img/about/mission.png")}
                     alt="We aim to give you joy. We wish you would choose optimism and hope by embarking on a journey with us.  "
-                    class="img-fluid"
+                    className="img-fluid"
                   />
                 </div>
               </div>
             </div>
-            <div class="section-top-border">
-              <h3 class="mb-30">Our Tagline</h3>
-              <div class="row">
-                <div class="col-md-4">
+            <div className="section-top-border">
+              <h3 className="mb-30">Our Tagline</h3>
+              <div className="row">
+                <div className="col-md-4">
                   <img
                     src={require("../static/img/about/tagline.png")}
                     alt="This phrase is to brighten the day, it symbolises fireflies of hope and positivity when we’re consumed by negativity."
-                    class="img-fluid"
+                    className="img-fluid"
                   />
                 </div>
-                <div class="col-md-8 mt-sm-20">
+                <div className="col-md-8 mt-sm-20">
                   <p>
                     A catchy phrase to brighten your day and give you hope,
                     that’s what our tagline is all about. We allow so many
@@ -115,11 +115,11 @@ export default class About extends Component {
                 </div>
               </div>
             </div>
-            <div class="section-top-border text-right">
-              <h3 class="mb-30">Our Logo</h3>
-              <div class="row">
-                <div class="col-md-8">
-                  <p class="text-right">
+            <div className="section-top-border text-right">
+              <h3 className="mb-30">Our Logo</h3>
+              <div className="row">
+                <div className="col-md-8">
+                  <p className="text-right">
                     The scientific symbol of Dopamine, the happiness and
                     motivation chemical in our brain merged with a splash of
                     colours signifying joy to send a rush of Dopamine in your
@@ -128,11 +128,11 @@ export default class About extends Component {
                     positivity is the zest behind our logo.
                   </p>
                 </div>
-                <div class="col-md-4">
+                <div className="col-md-4">
                   <img
                     src={require("../static/img/logo/logo.png")}
                     alt="Our logo is the chemical structure of Dopamine, the happiness chemical.The zest behind it is to boost positivity and cheer."
-                    class="img-fluid"
+                    className="img-fluid"
                   />
                 </div>
               </div>
@@ -142,12 +142,12 @@ export default class About extends Component {
         {/* <!-- End Align Area --> */}
 
         {/* <!-- Our Team Starts --> */}
-        <section class="service-area sky-blue section-padding2">
-          <div class="container">
+        <section className="service-area sky-blue section-padding2">
+          <div className="container">
             {/* <!-- Section Tittle --> */}
-            <div class="row d-flex justify-content-center">
-              <div class="col-lg-6">
-                <div class="section-tittle text-center">
+            <div className="row d-flex justify-content-center">
+              <div className="col-lg-6">
+                <div className="section-tittle text-center">
                   <h2>
                     Our Team
                     <p>Meet the people who make the magic happen!</p>
@@ -156,21 +156,21 @@ export default class About extends Component {
               </div>
             </div>
             {/* <!-- Section caption --> */}
-            <div class="row">
-              <div class="col-xl-6 col-lg-6 col-md-6">
-                <div class="services-caption text-center mb-30">
-                  <div class="service-icon">
+            <div className="row">
+              <div className="col-xl-6 col-lg-6 col-md-6">
+                <div className="services-caption text-center mb-30">
+                  <div className="service-icon">
                     <span>
                       <img
-                        class="img-fluid"
+                        className="img-fluid"
                         src={require("../static/img/team/harshita.png")}
                         alt="Harshita Nagpal is the co-founder of Dopamine, leading the editing and creative team"
                       />
                     </span>
                   </div>
-                  {/* <!-- <div class="what-img">
+                  {/* <!-- <div className="what-img">
                             </div> --> */}
-                  <div class="service-cap">
+                  <div className="service-cap">
                     <h4>
                       <a href="https://www.instagram.com/hahaharshita">
                         Harshita Nagpal
@@ -187,18 +187,18 @@ export default class About extends Component {
                   </div>
                 </div>
               </div>
-              <div class="col-xl-6 col-lg-6 col-md-6">
-                <div class="services-caption text-center mb-30">
-                  <div class="service-icon">
+              <div className="col-xl-6 col-lg-6 col-md-6">
+                <div className="services-caption text-center mb-30">
+                  <div className="service-icon">
                     <span>
                       <img
-                        class="img-fluid"
+                        className="img-fluid"
                         src={require("../static/img/team/mashu.png")}
                         alt="Mashu Ajmera, is the co-founder of Dopamine,takes care of all the technical aspects of the magazine and the website. "
                       />
                     </span>
                   </div>
-                  <div class="service-cap">
+                  <div className="service-cap">
                     <h4>
                       <a href="https://www.instagram.com/mashuajmera">
                         Mashu Ajmera
@@ -214,18 +214,18 @@ export default class About extends Component {
                   </div>
                 </div>
               </div>
-              <div class="col-xl-4 col-lg-4 col-md-6">
-                <div class="services-caption active text-center mb-30">
-                  <div class="service-icon">
+              <div className="col-xl-4 col-lg-4 col-md-6">
+                <div className="services-caption active text-center mb-30">
+                  <div className="service-icon">
                     <span>
                       <img
-                        class="img-fluid"
+                        className="img-fluid"
                         src={require("../static/img/team/srinidhi.png")}
                         alt="Srinidhi Srinivasan, is the content creator of Dopamine team. From captions, to articles to editing"
                       />
                     </span>
                   </div>
-                  <div class="service-cap">
+                  <div className="service-cap">
                     <h4>
                       <a href="https://www.instagram.com/srini_1234/">
                         Srinidhi Srinivasan
@@ -242,12 +242,12 @@ export default class About extends Component {
                   </div>
                 </div>
               </div>
-              <div class="col-xl-4 col-lg-4 col-md-6">
-                <div class="services-caption active text-center mb-30">
-                  <div class="service-icon">
+              <div className="col-xl-4 col-lg-4 col-md-6">
+                <div className="services-caption active text-center mb-30">
+                  <div className="service-icon">
                     <span>
                       <img
-                        class="img-fluid"
+                        className="img-fluid"
                         src={require("../static/img/team/samyak.png")}
                         alt="
                         Samyak Samantray, is the design engine of Dopamine team,who brings his A game to our curations by beautigying our work. 
@@ -255,7 +255,7 @@ export default class About extends Component {
                       />
                     </span>
                   </div>
-                  <div class="service-cap">
+                  <div className="service-cap">
                     <h4>
                       <a href="https://www.instagram.com/samyak.samantaray/">
                         Samyak Samantaray
@@ -271,19 +271,19 @@ export default class About extends Component {
                   </div>
                 </div>
               </div>
-              <div class="col-xl-4 col-lg-4 col-md-6">
-                <div class="services-caption active text-center mb-30">
-                  <div class="service-icon">
+              <div className="col-xl-4 col-lg-4 col-md-6">
+                <div className="services-caption active text-center mb-30">
+                  <div className="service-icon">
                     <span>
                       <img
-                        class="img-fluid"
+                        className="img-fluid"
                         src={require("../static/img/team/devika.png")}
                         alt="Devika Gujrani, is the Public relations person at Dopamine. She handles all the collaborations, contests, events etc. 
                         "
                       />
                     </span>
                   </div>
-                  <div class="service-cap">
+                  <div className="service-cap">
                     <h4>
                       <a href="https://www.instagram.com/devika_gujrani97/">
                         Devika Gujrani
