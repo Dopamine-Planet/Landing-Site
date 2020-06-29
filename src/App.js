@@ -36,10 +36,12 @@ function App() {
         <Route path="/not-found" component={NotFound} />
         <Route component={NotFound} />
       </Switch>
-      <MessengerCustomerChat
-        pageId={process.env.REACT_APP_FACEBOOK_pageId}
-        appId={process.env.REACT_APP_FACEBOOK_pageId}
-      />
+      {typeof Object.assign !== "function" && (
+        <MessengerCustomerChat
+          pageId={process.env.REACT_APP_FACEBOOK_pageId}
+          appId={process.env.REACT_APP_FACEBOOK_pageId}
+        />
+      )}
       <Footer />
     </Router>
   );
