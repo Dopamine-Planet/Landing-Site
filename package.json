@@ -1,6 +1,7 @@
 {
   "name": "landing-webpage",
-  "homepage": "https://dopamineplanet.com",
+  "homepage": ".",
+  "start_url": ".",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
