@@ -1,9 +1,17 @@
 import React, { Component } from "react";
+import { Helmet } from "react-helmet";
 
 export default class NotFound extends Component {
   render() {
     return (
       <main>
+        <Helmet>
+          <title>Page Not Found | Dopamine - Let Positivity Engulf You</title>
+          <meta
+            name="description"
+            content="Your thoughts feed your soul, so thinking good and pleasant is of utmost importance. With this in our mind, we curated some joyous and optimistic magazines. And soon we’ll release an app as well."
+          />
+        </Helmet>
         <div className="available-app-area">
           <div className="container">
             <div className="row d-flex justify-content-between">

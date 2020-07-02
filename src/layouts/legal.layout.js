@@ -4,6 +4,7 @@ import Breadcrumb from "../components/breadcrumb.component";
 import Sidebar from "../components/sidebar.component";
 import Markdown from "markdown-to-jsx";
 import firebase from "../config/database";
+import { Helmet } from "react-helmet";
 
 export default class Legal extends Component {
   state = { legal: undefined };
@@ -25,6 +26,9 @@ export default class Legal extends Component {
       <>
         {this.state.legal && (
           <main>
+            <Helmet>
+              <title>{`${this.state.legal.title} | Dopamine - Let Positivity Engulf You`}</title>
+            </Helmet>
             {/* <!-- Slider Area Start--> */}
             <div className="services-area">
               <Breadcrumb />

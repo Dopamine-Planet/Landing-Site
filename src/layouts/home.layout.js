@@ -3,6 +3,7 @@ import firebase from "../config/database";
 import Magazine from "../components/magazine.component";
 import Screenshot from "../components/screenshot.component";
 import EventList from "../components/eventList.component";
+import { Helmet } from "react-helmet";
 
 export default class Home extends Component {
   componentDidMount() {
@@ -17,6 +18,13 @@ export default class Home extends Component {
     return (
       <main>
         {/* <!-- Slider Area Start--> */}
+        <Helmet>
+          <title>Dopamine - Let Positivity Engulf You</title>
+          <meta
+            name="description"
+            content="Your thoughts feed your soul, so thinking good and pleasant is of utmost importance. With this in our mind, we curated some joyous and optimistic magazines. And soon we’ll release an app as well."
+          />
+        </Helmet>
         <div className="slider-area ">
           <div className="slider-active">
             <div className="single-slider slider-height slider-padding sky-blue d-flex align-items-center">
