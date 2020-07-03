@@ -162,7 +162,7 @@ export default class BlogDetails extends Component {
                           <a href="/blog/self-love">
                             <img
                               className="img-fluid dp-responsive-img"
-                              src={require("../static/img/blog/single_blog_2.png")}
+                              src="https://firebasestorage.googleapis.com/v0/b/dopamine-planet.appspot.com/o/blog%2Ffeatured-image%2Fself-love.png?alt=media&token=5041b5b1-9479-4fd4-9e8b-95a6cb720d67"
                               alt="Self Love: The Key to a Happy Life | Dopamine"
                             />
                           </a>
@@ -195,7 +195,7 @@ export default class BlogDetails extends Component {
                           <a href="/blog/soshi">
                             <img
                               className="img-fluid dp-responsive-img"
-                              src={require("../static/img/blog/single_blog_1.png")}
+                              src="https://firebasestorage.googleapis.com/v0/b/dopamine-planet.appspot.com/o/blog%2Ffeatured-image%2Fsoshi.png?alt=media&token=64d9952f-8411-4329-9928-91e40b1e65a7"
                               alt="Soshi's: Making life delicious | Dopamine"
                             />
                           </a>
