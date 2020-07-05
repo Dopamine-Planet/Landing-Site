@@ -303,7 +303,7 @@ export default class Home extends Component {
         </section>
         {/* <!-- Best Pricing End --> */}
         <EventList limit={3} />
-        <Magazine />
+        {/* <Magazine /> */}
         {/* <!-- Available App  Start--> */}
         <div className="available-app-area">
           <div className="container">

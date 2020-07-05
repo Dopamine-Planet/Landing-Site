@@ -43,14 +43,14 @@ export default class Magazine extends Component {
                     <div className="single-customer mb-100" key={i}>
                       <a href={`/magazines/${issue.slug}`}>
                         <div className="what-img">
-                          {/* {require(`../static/img/${issue.thumbnail}`) ? (
+                          {issue.thumbnail ? (
                             <img
                               src={require(`../static/img/${issue.thumbnail}`)}
                               alt=""
                             />
                           ) : (
                             <Skeleton circle={true} height={70} width={70} />
-                          )} */}
+                          )}
                         </div>
                         <div className="what-cap">
                           <h4>{issue.title || <Skeleton />}</h4>
