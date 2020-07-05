@@ -7,11 +7,13 @@ import { Helmet } from "react-helmet";
 
 export default class Home extends Component {
   componentDidMount() {
-    const messaging = firebase.messaging();
-    messaging
-      .requestPermission()
-      .then(() => console.log("Request Granted"))
-      .catch((err) => console.log(err));
+    if (firebase.messaging.isSupported()) {
+      const messaging = firebase.messaging();
+      messaging
+        .requestPermission()
+        .then(() => console.log("Request Granted"))
+        .catch((err) => console.log(err));
+    }
   }
 
   render() {
@@ -303,7 +305,7 @@ export default class Home extends Component {
         </section>
         {/* <!-- Best Pricing End --> */}
         <EventList limit={3} />
-        {/* <Magazine /> */}
+        <Magazine />
         {/* <!-- Available App  Start--> */}
         <div className="available-app-area">
           <div className="container">
