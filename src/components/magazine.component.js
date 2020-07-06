@@ -54,7 +54,7 @@ export default class Magazine extends Component {
                         </div>
                         <div className="what-cap">
                           <h4>{issue.title || <Skeleton />}</h4>
-                          <p>{issue.excerpt || <Skeleton />}</p>
+                          <p>{issue.excerpt || <Skeleton count={2} />}</p>
                         </div>
                       </a>
                     </div>

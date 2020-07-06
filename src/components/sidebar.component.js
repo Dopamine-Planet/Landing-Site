@@ -57,13 +57,13 @@ export default class Sidebar extends Component {
             <li>
               <a href="/blog?category=Issue-5" className="d-flex">
                 <p>Magazine Issue 5 </p>
-                <p> (1)</p>
+                <p></p>
               </a>
             </li>
             <li>
               <a href="/blog?category=Issue-3" className="d-flex">
                 <p>Magazine Issue 3 </p>
-                <p> (1)</p>
+                <p></p>
               </a>
             </li>
           </ul>

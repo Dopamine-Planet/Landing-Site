@@ -1,21 +1,10 @@
 import React, { Component } from "react";
-import firebase from "../config/database";
 import Magazine from "../components/magazine.component";
 import Screenshot from "../components/screenshot.component";
 import EventList from "../components/eventList.component";
 import { Helmet } from "react-helmet";
 
 export default class Home extends Component {
-  componentDidMount() {
-    if (firebase.messaging.isSupported()) {
-      const messaging = firebase.messaging();
-      messaging
-        .requestPermission()
-        .then(() => console.log("Request Granted"))
-        .catch((err) => console.log(err));
-    }
-  }
-
   render() {
     return (
       <main>
