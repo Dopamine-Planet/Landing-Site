@@ -178,7 +178,7 @@ export default class Collaborate extends Component {
                     <div className="single-customer mb-100">
                       <div className="what-img">
                         <img
-                          src={require("../static/img/testmonial/Ajay-Singh-Peelwa.png")}
+                          src="https://firebasestorage.googleapis.com/v0/b/dopamine-planet.appspot.com/o/blog%2Fauthor-image%2FLakshaya.png?alt=media&token=550468d4-a27e-4910-996f-649790978585"
                           alt="Ajay Singh Peelwa"
                         />
                       </div>
@@ -206,7 +206,7 @@ export default class Collaborate extends Component {
                     <div className="single-customer mb-100">
                       <div className="what-img">
                         <img
-                          src={require("../static/img/testmonial/Ajay-Singh-Peelwa.png")}
+                          src="https://firebasestorage.googleapis.com/v0/b/dopamine-planet.appspot.com/o/blog%2Fauthor-image%2Fsoshi.png?alt=media&token=6ce95d06-0a36-4a8f-87b2-025db0c74e56"
                           alt="Ajay Singh Peelwa"
                         />
                       </div>
