@@ -9,7 +9,10 @@ import BlogArticle from "../components/blog-article.component";
 import Author from "../components/author.component";
 
 export default class BlogDetails extends Component {
-  state = { blog: { tags: ["", ""], comments: ["", ""], author: {} } };
+  state = {
+    blog: { tags: ["", ""], comments: ["", ""], author: {} },
+    comment: undefined,
+  };
 
   componentDidMount() {
     var firestore = firebase.firestore();
@@ -26,7 +29,9 @@ export default class BlogDetails extends Component {
   }
 
   handleChange = (e) => {
-    this.setState({ [e.target.name]: e.target.value });
+    this.setState({
+      comment: { ...this.state.comment, [e.target.name]: e.target.value },
+    });
   };
 
   onComment = (e) => {
@@ -38,10 +43,7 @@ export default class BlogDetails extends Component {
       .doc(this.state.blog.id)
       .update({
         comments: firebase.firestore.FieldValue.arrayUnion({
-          name: this.state.name,
-          phone: this.state.phone,
-          email: this.state.email,
-          text: this.state.text,
+          ...this.state.comment,
           date: new Date().toGMTString(),
         }),
       })
@@ -205,25 +207,24 @@ export default class BlogDetails extends Component {
                   </div>
                 </div>
                 <Author author={this.state.blog.author} />
-                <div className="comments-area">
-                  <h4>
-                    {this.state.blog.comments &&
-                      this.state.blog.comments.length}{" "}
-                    Comments
-                  </h4>
-                  {this.state.blog.comments &&
-                    this.state.blog.comments.map((comment, i) => (
+                {this.state.blog.comments && (
+                  <div className="comments-area">
+                    <h4>{this.state.blog.comments.length} Comments</h4>
+                    {this.state.blog.comments.map((comment, i) => (
                       <div className="comment-list">
                         <div className="single-comment justify-content-between d-flex">
                           <div className="user justify-content-between d-flex">
                             <div className="thumb">
                               {comment.name ? (
-                                <img
-                                  src={require("../static/img/comment/comment_3.png")}
-                                  alt={comment.name}
-                                />
+                                <div className="user_image">
+                                  {comment.name.charAt(0)}
+                                </div>
                               ) : (
-                                <Skeleton />
+                                <Skeleton
+                                  circle={true}
+                                  height={70}
+                                  width={70}
+                                />
                               )}
                             </div>
                             <div className="desc">
@@ -248,7 +249,8 @@ export default class BlogDetails extends Component {
                         </div>
                       </div>
                     ))}
-                </div>
+                  </div>
+                )}
                 <div className="comment-form">
                   <h4>Leave a Reply</h4>
                   <div className="genric-btn success circle mb-3">
@@ -268,6 +270,7 @@ export default class BlogDetails extends Component {
                             id="text"
                             cols="30"
                             rows="9"
+                            required
                             onChange={this.handleChange}
                             placeholder="Write Your Comment"
                           ></textarea>
@@ -280,6 +283,7 @@ export default class BlogDetails extends Component {
                             name="name"
                             id="name"
                             type="text"
+                            required
                             onChange={this.handleChange}
                             placeholder="Name"
                           />
