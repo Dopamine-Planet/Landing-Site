@@ -4,6 +4,7 @@ import Breadcrumb from "../components/breadcrumb.component";
 import ArticleCard from "../components/article-card.component";
 import BlogArticle from "../components/blog-article.component";
 import Author from "../components/author.component";
+import categories from "../config/categories.json";
 
 export default class AdminBlog extends Component {
   state = {
@@ -312,11 +313,11 @@ export default class AdminBlog extends Component {
                           required
                         >
                           <option value={undefined}>Select Category</option>
-                          <option value="Issue-3">Issue 3</option>
-                          <option value="Issue-5">Issue 5</option>
-                          <option value="Recommendations">
-                            Recommendations
-                          </option>
+                          {categories.map((category, i) => (
+                            <option key={i} value={category.key}>
+                              {category.value}
+                            </option>
+                          ))}
                         </select>
                       </div>
                     </div>

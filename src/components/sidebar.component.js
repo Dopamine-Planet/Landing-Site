@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import firebase from "../config/database";
 import MailchimpSubscribe from "react-mailchimp-subscribe";
 import Skeleton from "react-loading-skeleton";
+import categories from "../config/categories.json";
 
 export default class Sidebar extends Component {
   state = { blog: ["", "", "", ""], email: undefined };
@@ -54,18 +55,14 @@ export default class Sidebar extends Component {
         <aside className="single_sidebar_widget post_category_widget">
           <h4 className="widget_title">Category</h4>
           <ul className="list cat-list">
-            <li>
-              <a href="/blog?category=Issue-5" className="d-flex">
-                <p>Magazine Issue 5 </p>
-                <p></p>
-              </a>
-            </li>
-            <li>
-              <a href="/blog?category=Issue-3" className="d-flex">
-                <p>Magazine Issue 3 </p>
-                <p></p>
-              </a>
-            </li>
+            {categories.map((category, i) => (
+              <li key={i}>
+                <a href={"/blog?category=" + category.key} className="d-flex">
+                  <p>{category.value}</p>
+                  <p></p>
+                </a>
+              </li>
+            ))}
           </ul>
         </aside>
 
@@ -92,13 +89,17 @@ export default class Sidebar extends Component {
         <aside className="single_sidebar_widget tag_cloud_widget">
           <h4 className="widget_title">Tag Clouds</h4>
           <ul className="list">
-            {["positivity", "cheerful", "joy", "kind", "optimistic"].map(
-              (tag, i) => (
-                <li key={i}>
-                  <a href={`/blog?tag=${tag}`}>{tag}</a>
-                </li>
-              )
-            )}
+            {[
+              "positivity",
+              "podcast",
+              "unconventional",
+              "cheerful",
+              "optimistic",
+            ].map((tag, i) => (
+              <li key={i}>
+                <a href={`/blog?tag=${tag}`}>{tag}</a>
+              </li>
+            ))}
           </ul>
         </aside>
 
