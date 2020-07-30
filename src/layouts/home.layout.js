@@ -43,7 +43,7 @@ export default class Home extends Component {
                         <a
                           data-animation="fadeInLeft"
                           data-delay="1.0s"
-                          href="https://app.dopamineplanet.com"
+                          href="#"
                           className="btn radius-btn"
                         >
                           Coming Soon!

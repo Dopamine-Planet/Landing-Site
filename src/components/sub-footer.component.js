@@ -13,10 +13,7 @@ export default class SubFooter extends Component {
             </div>
             <div className="col-xl-2 col-lg-3">
               <div className="say-btn">
-                <a
-                  href="https://app.dopamineplanet.com"
-                  className="btn radius-btn"
-                >
+                <a href="#" className="btn radius-btn">
                   Coming Soon
                 </a>
               </div>

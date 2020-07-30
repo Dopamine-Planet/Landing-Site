@@ -7,7 +7,6 @@ export default class BlogArticle extends Component {
     return (
       <div className="single-post">
         <div className="feature-img">
-          {/* <!-- <img className="img-fluid" src={require("../static/img/blog/single_blog_1.png")} alt=""> --> */}
           {this.props.blog.embed ? (
             <div
               className="embed-container"
@@ -23,6 +22,12 @@ export default class BlogArticle extends Component {
                 allowtransparency="true"
               ></iframe>
             </div>
+          ) : this.props.blog.featuredImage ? (
+            <img
+              className="img-fluid"
+              src={this.props.blog.featuredImage}
+              alt={this.props.blog.title}
+            />
           ) : (
             <Skeleton height={300} />
           )}
