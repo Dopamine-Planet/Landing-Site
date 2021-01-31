@@ -157,7 +157,7 @@ export default class About extends Component {
             </div>
             {/* <!-- Section caption --> */}
             <div className="row">
-              <div className="col-xl-6 col-lg-6 col-md-6">
+              <div className="col-xl-4 col-lg-4 col-md-6">
                 <div className="services-caption text-center mb-30">
                   <div className="service-icon">
                     <span>
@@ -187,7 +187,7 @@ export default class About extends Component {
                   </div>
                 </div>
               </div>
-              <div className="col-xl-6 col-lg-6 col-md-6">
+              <div className="col-xl-4 col-lg-4 col-md-6">
                 <div className="services-caption text-center mb-30">
                   <div className="service-icon">
                     <span>
@@ -220,34 +220,6 @@ export default class About extends Component {
                     <span>
                       <img
                         className="img-fluid"
-                        src={require("../static/img/team/srinidhi.png")}
-                        alt="Srinidhi Srinivasan, is the content creator of Dopamine team. From captions, to articles to editing"
-                      />
-                    </span>
-                  </div>
-                  <div className="service-cap">
-                    <h4>
-                      <a href="https://www.instagram.com/srini_1234/">
-                        Srinidhi Srinivasan
-                      </a>
-                    </h4>
-                    <h5>Content Creator</h5>
-
-                    <p>
-                      Those killer captions you see? She writes ‘em all!
-                      Captions, articles, editing, blogs, she takes care of it
-                      and adds the charm of words to bring the best quality
-                      content upfront.
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div className="col-xl-4 col-lg-4 col-md-6">
-                <div className="services-caption active text-center mb-30">
-                  <div className="service-icon">
-                    <span>
-                      <img
-                        className="img-fluid"
                         src={require("../static/img/team/samyak.png")}
                         alt="
                         Samyak Samantray, is the design engine of Dopamine team,who brings his A game to our curations by beautigying our work. 
@@ -261,39 +233,12 @@ export default class About extends Component {
                         Samyak Samantaray
                       </a>
                     </h4>
-                    <h5>Design</h5>
+                    <h5>Designer</h5>
                     <p>
                       This creative head brings his A-game to our curations. The
                       amazing designs enhancing each and every content of
                       magazine, the posters making our social media look nicer,
                       all the designs are his talent and expertise.
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div className="col-xl-4 col-lg-4 col-md-6">
-                <div className="services-caption active text-center mb-30">
-                  <div className="service-icon">
-                    <span>
-                      <img
-                        className="img-fluid"
-                        src={require("../static/img/team/devika.png")}
-                        alt="Devika Gujrani, is the Public relations person at Dopamine. She handles all the collaborations, contests, events etc. 
-                        "
-                      />
-                    </span>
-                  </div>
-                  <div className="service-cap">
-                    <h4>
-                      <a href="https://www.instagram.com/devika_gujrani97/">
-                        Devika Gujrani
-                      </a>
-                    </h4>
-                    <h5>Public Relations</h5>
-                    <p>
-                      This girl handles our collaborations, contests, events and
-                      with her mind bent towards ideas of outreach, she takes
-                      our magazine to a greater audience.
                     </p>
                   </div>
                 </div>
