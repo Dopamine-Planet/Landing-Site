@@ -9,6 +9,7 @@ export default class Magazine extends Component {
     var firestore = firebase.firestore();
     firestore
       .collection("magazines")
+      .orderBy("title", "asc")
       .get()
       .then((querySnapshot) => {
         const data = querySnapshot.docs.map((doc) => doc.data());
