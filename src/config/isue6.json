@@ -1,0 +1,78 @@
+{
+  "magazine": {
+    "thumbnail": "magazines/6.png",
+    "slug": "issue-6",
+    "display": { "embed": "https://www.yumpu.com/en/embed/view/6WmMrK…" },
+    "title": "Magazine Issue 6",
+    "subtitle": "We're celebrating creativity, and you're invited. Here's our first issue of Dopamine positivity magazine of 2021 ✨",
+    "excerpt": "We're celebrating creativity, and you're invited. Here's our first issue of Dopamine positivity magazine of 2021 ✨",
+    "contributors": {
+      "artists": [
+        {
+          "name": "Saumya Nagpal",
+          "profile": "http://instagram.com/saumyanagpal27"
+        },
+        { "name": "Rima Chandra", "profile": "" },
+        {
+          "name": "Abhay Pratap Singh",
+          "profile": "https://www.instagram.com/___abhaypratapsingh___/"
+        },
+        { "name": "Sangya J", "profile": "" }
+      ],
+      "designers": [
+        {
+          "name": "Samyak Samantaray",
+          "profile": "https://www.instagram.com/samyak.samantaray/"
+        },
+        {
+          "name": "Harshita Nagpal",
+          "profile": "https://www.instagram.com/hahaharshita/"
+        }
+      ],
+      "editors": [{ "name": "", "profile": "" }],
+      "photographers": [
+        {
+          "name": "Pranav Gupta",
+          "profile": "https://www.instagram.com/pranavgupta98/"
+        },
+        {
+          "name": "Navya Jindal",
+          "profile": "https://instagram.com/artbynavss"
+        },
+        {
+          "name": "Anand Jain",
+          "profile": "https://www.instagram.com/freezepink/"
+        }
+      ],
+      "reviewers": [
+        {
+          "name": "Nalini Gupta",
+          "profile": "https://www.instagram.com/vodkalassi"
+        },
+        {
+          "name": "Aabhas Amol",
+          "profile": "https://www.instagram.com/aabhasamol/"
+        },
+        {
+          "name": "Akarsh Vatsa",
+          "profile": "https://www.instagram.com/vatsa_0408"
+        }
+      ],
+      "writers": [
+        {
+          "name": "Sruthi Sreeram",
+          "profile": "http://instagram.com/thxyxarts"
+        },
+        {
+          "name": "Jaya Kota",
+          "profile": "https://www.instagram.com/blujay_3/"
+        },
+        { "name": "Nupur Jha", "profile": "" },
+        {
+          "name": "Sakshi Sharma",
+          "profile": "https://www.instagram.com/glittterbugg/"
+        }
+      ]
+    }
+  }
+}
