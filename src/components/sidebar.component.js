@@ -2,10 +2,9 @@ import React, { Component } from "react";
 import firebase from "../config/database";
 import MailchimpSubscribe from "react-mailchimp-subscribe";
 import Skeleton from "react-loading-skeleton";
-import categories from "../config/categories.json";
 
 export default class Sidebar extends Component {
-  state = { blog: ["", "", "", ""], email: undefined };
+  state = { blog: ["", "", "", ""], categories: [], email: undefined };
 
   componentDidMount() {
     var firestore = firebase.firestore();
@@ -18,6 +17,14 @@ export default class Sidebar extends Component {
         this.setState({ blog: data }); // array of cities objects
       })
       .catch((err) => console.log(err));
+    firestore
+      .collection("categories")
+      .get()
+      .then((querySnapshot) => {
+        const data = querySnapshot.docs.map((doc) => doc.data());
+        console.log(data);
+        this.setState({ categories: data }); // array of categories
+      });
   }
 
   handleChange = (e) => {
@@ -55,7 +62,7 @@ export default class Sidebar extends Component {
         <aside className="single_sidebar_widget post_category_widget">
           <h4 className="widget_title">Category</h4>
           <ul className="list cat-list">
-            {categories.map((category, i) => (
+            {this.state.categories.map((category, i) => (
               <li key={i}>
                 <a href={"/blog?category=" + category.key} className="d-flex">
                   <p>{category.value}</p>

@@ -4,20 +4,28 @@ import Breadcrumb from "../components/breadcrumb.component";
 import ArticleCard from "../components/article-card.component";
 import BlogArticle from "../components/blog-article.component";
 import Author from "../components/author.component";
-import categories from "../config/categories.json";
 
 export default class AdminBlog extends Component {
   state = {
     id: null,
     notif: undefined,
+    categories: [],
     blog: { author: {}, tags: [] },
     fileProgress: 0,
     authorProgress: 0,
   };
 
   componentDidMount() {
+    var firestore = firebase.firestore();
+    firestore
+      .collection("categories")
+      .get()
+      .then((querySnapshot) => {
+        const data = querySnapshot.docs.map((doc) => doc.data());
+        console.log(data);
+        this.setState({ categories: data }); // array of categories
+      });
     if (this.props.match.params.slug) {
-      var firestore = firebase.firestore();
       firestore
         .collection("blog")
         .where("slug", "==", this.props.match.params.slug)
@@ -313,7 +321,7 @@ export default class AdminBlog extends Component {
                           required
                         >
                           <option value={undefined}>Select Category</option>
-                          {categories.map((category, i) => (
+                          {this.state.categories.map((category, i) => (
                             <option key={i} value={category.key}>
                               {category.value}
                             </option>
