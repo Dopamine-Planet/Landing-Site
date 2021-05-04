@@ -55,6 +55,7 @@ export default class BlogArticle extends Component {
               options={{
                 overrides: {
                   ul: { props: { className: "unordered-list" } },
+                  img: { props: { className: "img-responsive" } },
                 },
                 forceBlock: true,
               }}

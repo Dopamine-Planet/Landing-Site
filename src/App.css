@@ -106,3 +106,9 @@
 .genric-btn.success.circle:empty {
   display: none !important;
 }
+
+.img-responsive {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
