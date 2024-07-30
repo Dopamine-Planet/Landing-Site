@@ -75,7 +75,7 @@ export default class Breadcrumb extends Component {
                             //   )
                             // }
                           >
-                            <a href="/admin/blog">Contribute</a>
+                            <a href="/admin/blog">Create</a>
                           </button>
                         </li>
                       </ul>
