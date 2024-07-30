@@ -49,6 +49,11 @@ export default class BlogArticle extends Component {
                 </a>
               ))}
             </li>
+            <li>
+              <a href=`/admin/blog/${this.props.blog.slug}`>
+                <b>Edit blog<b>
+              </a>
+            </li>
           </ul>
           {this.props.blog.description ? (
             <Markdown
