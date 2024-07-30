@@ -25,7 +25,7 @@ export default class Breadcrumb extends Component {
                     <nav>
                       <ul id="navigation">
                         <li>
-                          <a href="/">Home</a>
+                          <a href="/home">Home</a>
                         </li>
                         <li>
                           <a href="/#magazines">
@@ -68,12 +68,13 @@ export default class Breadcrumb extends Component {
                           <button
                             className="genric-btn success circle mb-3"
                             id="contribute"
-                            onClick={() =>
-                              window.open(
-                                "https://docs.google.com/forms/d/e/1FAIpQLScaVzYFnT8nVicqn8HZCr0Iw0y6SrMQHrMz4xx4o1loNFGVew/viewform",
-                                "_blank"
-                              )
-                            }
+                            href="/admin/blog"
+                            // onClick={() => {
+                            //   window.open(
+                            //     "https://docs.google.com/forms/d/e/1FAIpQLScaVzYFnT8nVicqn8HZCr0Iw0y6SrMQHrMz4xx4o1loNFGVew/viewform",
+                            //     "_blank"
+                            //   )
+                            // }
                           >
                             Contribute
                           </button>
