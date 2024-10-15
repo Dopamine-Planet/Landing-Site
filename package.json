@@ -9,7 +9,7 @@
     "@testing-library/user-event": "^7.2.1",
     "expose-loader": "^0.7.5",
     "firebase": "^7.24.0",
-    "markdown-to-jsx": "^6.11.4",
+    "markdown-to-jsx": "^7.4.0",
     "react": "^16.14.0",
     "react-dom": "^16.14.0",
     "react-helmet": "^6.1.0",
